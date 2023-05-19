@@ -530,11 +530,17 @@ button:focus {
 
 }
 
+.MmapateneLogo {
+    bottom: 100px;
+    border-radius:300px;
+    margin-bottom:250px;
+}
+
 .banner_area .position {
-  width: 100%;
-  bottom: 370px;
-  left: 0;
-  position: relative;
+    width: 100%;
+    bottom: 370px;
+    left: 0;
+    position: relative;
 }
 
 .booking_table {
