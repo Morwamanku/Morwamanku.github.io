@@ -141,7 +141,7 @@ button:focus {
 }
 
 .section_title p {
-  font-size: 30px;
+  font-size: 18px;
   line-height: 30px;
   color: #777777;
   margin-bottom: 0px;
@@ -521,18 +521,20 @@ button:focus {
   background: #04091e;
   position: relative;
   z-index: 1;
+  height:800px;
 }
 
 .banner_area .bg-parallax {
   background: url("../image/banner_bg.jpg") no-repeat scroll center 0/cover;
   opacity: 0.50;
+
 }
 
 .banner_area .position {
   width: 100%;
-  bottom: 0;
+  bottom: 370px;
   left: 0;
-  position: absolute;
+  position: relative;
 }
 
 .booking_table {
@@ -579,8 +581,10 @@ button:focus {
 }
 
 /*============= End banner_area css =============*/
+
+
 .hotel_booking_table {
-  background: #04091e;
+  background: #fff;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
