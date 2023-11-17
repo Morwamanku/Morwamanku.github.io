@@ -490,8 +490,8 @@ header{
 }
 
 .section4{
-    height: 100vh;
     width: 100%;
+    height: auto;
     background: black;
     
     
@@ -501,6 +501,7 @@ header{
     display: flex;
     justify-content: space-around;
     padding-top: 150px;
+    flex-wrap: wrap;
 }
 
 .section4-field{
@@ -696,10 +697,7 @@ header{
     
 
 
-    header {
-      
-        margin-bottom: 550px;
-    }
+   
 
     .section-about-words {
         
@@ -710,6 +708,11 @@ header{
         
         height: 260px;
 
+    }
+
+    .section-booking {
+        
+        display: none;
     }
     
 
