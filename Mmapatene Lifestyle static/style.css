@@ -49,6 +49,8 @@ header{
     opacity: 60%
 }
 
+
+
 .menu-options{
   
     display: block;
@@ -99,6 +101,10 @@ header{
     height: 100px;
 }
 
+.menu-buttons{
+    display: flex;
+    gap: 2px;
+}
 .menu-btn{
     background: transparent;
     height: 30px;
@@ -151,9 +157,11 @@ header{
     background: white;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 455px;
+    transform: translate(0%, 420px);
     border-radius: 18px;
     box-shadow: -14px 10px 34px 0px rgba(0,0,0,0.75);
+    height: auto;
+    display: block;
 }
 
 .section-booking-fields{
@@ -189,10 +197,45 @@ header{
     margin-bottom: 0.5rem;
 }
 
+
+.section-booking2{
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+.open-booking{
+    display: block;
+
+
+}
+
+.hide-block{
+    display: none;
+}
+
+.close-booking-btn{
+    background: transparent;
+    height: 40px;
+    width: 220px;
+    border-radius: 10px;
+    border: solid black 1px;
+    cursor: pointer;
+    color: black;
+}
+
+
 .section1{
     height: 100vh;
     width: 100%;
     background: white;
+    height: auto;
 }
 
 .section-heading{
@@ -204,6 +247,8 @@ header{
     display: flex;
     margin-top: 132px;
     box-shadow: 10px 4px 9px 13px rgba(0,0,0,0.47);
+    
+    height: auto;
 }
 
 .section1-img{
@@ -219,7 +264,7 @@ header{
 
 .section-about-words{
     width: 500px;
-    transform: translate(10%, 20%);
+    padding: 50px;
 }
 
 .section-about-words h1{
@@ -240,7 +285,8 @@ header{
     height: 100vh;
     width: 100%;
     background: #fff;
-    padding-top: 40px;
+    
+    
 }
 
 .section2 h1{
@@ -249,8 +295,7 @@ header{
     font-weight: 200;
     line-height: 93%;
     text-align: center;
-    padding-top: 22px;
-    padding-bottom: 22px;
+    
     
 }
 
@@ -337,6 +382,7 @@ header{
     height: 100vh;
     width: 100%;
     background: #fefefe;
+    height: auto;
     
 }
 
@@ -355,12 +401,13 @@ header{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 80px;
+    padding: 20px;
     
 }
 
 .room{
     background: #fefefe;
+    min-width: 300px;
     width: 420px;
     height: 600px;
     margin-bottom: 80px;
@@ -563,4 +610,125 @@ header{
     background: transparent;
     margin-top: 10px;
     cursor: pointer;
+}
+
+.image-header-buttons{
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+}
+
+.image-header-buttons ul{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+}
+
+
+.Room-detail-wrapper{
+    width: 100%;
+    height: 130vh;
+    padding: 80px;
+    display: flex;
+    height: auto;
+}
+
+.Left-Section{
+    width: 70%;
+}
+
+.Right-Section{
+    width: 30%;
+}
+
+.image-slide{
+    height: 600px;
+    min-width: 300px;
+    max-width: 1200px;
+    width: auto;
+}
+
+.image-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detail-services{
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    display: block;
+    color: #1a1a1a;
+}
+
+.Room-Name{
+    padding: 20px;
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 400;
+    
+
+}
+
+.Room-Description{
+    font-family: "Nunito", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #999999;
+}
+
+
+@media (max-width:750px) {
+    
+
+
+    header {
+      
+        margin-bottom: 550px;
+    }
+
+    .section-about-words {
+        
+         width: auto; 
+    }
+    
+    .foreground {
+        
+        height: 260px;
+
+    }
+    
+
+    
+}
+
+@media (max-width:950px) {
+    
+    .section-about{
+        display: flex;
+        flex-direction: column;
+        height: 200vh;
+        margin-top: 250px;
+    }
+
+   
+
+    .section1-img{
+        width: 100%;
+        height: 46.2rem;
+    }
 }
