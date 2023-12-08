@@ -652,6 +652,8 @@ header{
 
 .Right-Section{
     width: 30%;
+    display: flex;
+    flex-direction: column;
 }
 
 .Right-Section2{
@@ -713,7 +715,8 @@ header{
     background: red;
     color: white;
     border-radius: 15px;
-    margin-left: 100px;
+    margin-inline: auto;
+ 
 }
 
 .section5{
@@ -887,7 +890,8 @@ header{
 
     .Right-Section2{
         display:block;
-        padding: 50px;
+        display: flex;
+        flex-direction: column;
     }
 
     .section2 {
