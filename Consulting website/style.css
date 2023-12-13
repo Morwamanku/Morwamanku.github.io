@@ -527,13 +527,13 @@ section{
     flex-direction: column;
 }
 
-.contact-container .contactInfo .box{
+.contact-container .contactInfo .box2{
     
     padding: 20px 0;
     display: flex;
 }
 
-.contact-container .contactInfo .box .icon{
+.contact-container .contactInfo .box2 .icon{
     min-width: 60px;
     height: 60px;
     background: #fff;
@@ -544,7 +544,7 @@ section{
     font-size: 22px;
 }
 
-.contact-container .contactInfo .box .text{
+.contact-container .contactInfo .box2 .text{
     
     display: flex;
     margin-left: 20px;
@@ -554,7 +554,7 @@ section{
     font-weight: 300;
 }
 
-.contact-container .contactInfo .box .text h3{
+.contact-container .contactInfo .box2 .text h3{
     
     font-weight: 500;
     color: #00bcd4;
@@ -681,10 +681,10 @@ section{
     }
 
     .logo{
-        width: 380px;
-        margin-top: 200px;
-    
-    }
+    width: 350px;
+    margin-top: 200px;
+
+}
 
 
 }
