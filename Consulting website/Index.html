@@ -3,14 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mannya Consulting</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
-<body>
+<body onload="slider()">
     <header>
         <div class="slider">
             <img src="pexels-christian-fohrer-1804061.jpg" id="slideImg" alt="">
         </div>
+        <div class="overlay">
+            <nav>
+                <div class="search">
+                    <span class="left-nav">GET IN TOUCH  </span><i style="color: #fff;" class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <div class="logo">
+                    <img src="Manya_Logo-removebg-preview.png" alt="">
+                    
+                </div>
+                
+                <div class="menu">
+                    <a onclick="openMenu()" class="menu-btn" href="#">MENU</a>
+                    <div class="menu-grid">
+                        <div class="menu-line"></div>
+                        <div class="menu-line2"></div>
+                        <div class="menu-line3"></div>
+                    </div>
+                </div>
+                
+                
+            </nav>
+        </div>
+
+        <div class="menu-opacity">
+            <div class="exit-menu">
+                <a onclick="closeMenu()" class="menu-btn" href="#">EXIT</a>
+                <div class="menu-grid">
+                    <div style="background: #333;" class="menu-line"></div>
+                    <div style="background: #333;" class="menu-line2"></div>
+                    <div style="background: #333;" class="menu-line3"></div>
+                </div>
+            </div>
+            <div class="sub-menu-opacity">
+                <div class="menu-options">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Contact</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="right-opacity">
+                    <div class="menu-image">
+                        <img src="Menu image.png" alt="">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
     </header>
+
+    <div class="heading">
+        <h1>About</h1>
+        <p>Partner with us to elevate your construction endeavors with precision and expertise.</p>
+    </div>
+  
+    <section class="about">
+
+        <div class="about-image">
+            <img   src="pexels-fauxels-3183148.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h2>Tailored Solutions for Your </h2><span>Construction Projects</span>
+            <p>Established in 2024, Mannya Consulting is a specialist engineering consultancy in Gauteng that
+                strives for excellence in each project with a consistent focus on client satisfaction. Our highly skilled
+                team transcends expectations by accurately understanding our client’s objectives and exercising
+                close attention to detail, while producing creative and innovative designs.
+                Our engineering consultants pride themselves on forming authentic, lasting and transparent
+                relationships with our clients, rooted in mutual trust and integrity.</p>
+            <a class="read-more" href="#">Read More</a>
+        </div>
+      
+
+    </section>
+    <section class="about" style="padding-top: 100px;">
+
+        
+        <div class="about-content" style="padding-right: 20px;">
+            <h2>Blueprints for Progress:</h2><span>Unveiling the Details</span>
+            <p> Our highly skilled team transcends expectations by accurately understanding our client’s objectives and exercising close attention to detail, while producing creative and innovative designs.
+
+                Our structural engineering consultants pride themselves on forming authentic, lasting and transparent relationships with our clients, rooted in mutual trust and integrity.
+                    
+                We approach each project with a unique set of solutions to achieve the best possible tailored results.We design with practicality in mind, yet continuously strive to think differently in search of creativity and innovation that can add value to our client’s projects.</p>
+            <a class="read-more" href="#">Read More</a>
+        </div>
+
+        <div class="about-image">
+            <img   src="pexels-pixabay-271667.jpg" alt="">
+        </div>
+      
+
+    </section>
+
+    <div class="heading" style="background: #fff;color: #333;">
+        <h1 style="background: #fff; ">Services</h1>
+        <p style="background: #fff; ">We offer specialized services encompassing project management, design analysis, cost evaluation, and regulatory compliance.</p>
+    </div>
+    <section class="services">
+        <div class="service">
+            <img src="Services/geotechnical.png" alt="">
+            <h2>Geotechnical Engineering</h2>
+            <p>Our construction consulting firm specializes in Geotechnical Engineering, ensuring the solid foundation of your projects through expert analysis and innovative solutions.</p>
+        </div>
+        <div class="service">
+            <img src="Services/road-blockade.png" alt="">
+            <h2>Roads and pavement engineering</h2>
+            <p>As a construction consulting firm, we excel in Roads and Pavement Engineering, delivering sustainable and resilient infrastructure solutions for smooth and durable transportation networks.</p>
+        </div>
+        <div class="service">
+            <img src="Services/feasibility.png" alt="">
+            <h2>Feasibility studies</h2>
+            <p>Our construction consulting firm conducts comprehensive Feasibility Studies, offering strategic insights to guide informed decision-making for successful project outcomes.</p>
+        </div>
+        <div class="service">
+            <img src="Services/urban-planning.png" alt="">
+            <h2>Civil and municipal engineering</h2>
+            <p>As a construction consulting firm, we specialize in Civil and Municipal Engineering, orchestrating innovative solutions to enhance the functionality and resilience of urban infrastructure.</p>
+        </div>
+        <div class="service">
+            <img src="Services/project-management.png" alt="">
+            <h2>Project management</h2>
+            <p>Our construction consulting firm offers expert Project Management services, ensuring seamless execution, timely delivery, and successful outcomes for every construction endeavor.</p>
+        </div>
+        <div class="service">
+            <img src="Services/construction.png" alt="">
+            <h2>Construction supervision</h2>
+            <p>Our construction consulting firm provides vigilant Construction Supervision, ensuring projects adhere to quality standards, stay on schedule, and surpass client expectations.</p>
+        </div>
+        <div class="service">
+            <img src="Services/surveyor.png" alt="">
+            <h2>Quantity surveying</h2>
+            <p>As a construction consulting firm, we specialize in Quantity Surveying, delivering accurate cost estimates and meticulous budget management to optimize project efficiency</p>
+        </div>
+        <div class="service">
+            <img src="Services/drafting.png" alt="">
+            <h2>Civil drawings and detailing</h2>
+            <p>Our construction consulting firm excels in Civil Drawings and Detailing, providing precise blueprints and comprehensive documentation to bring projects to life with accuracy and efficiency.</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        
+        <div class="content">
+            <h1 >Contact</h1>
+            <p >Ready to enhance your construction projects with our expertise? Reach out to us</p>
+        </div>
+        <div class="contact-container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>2 Augrabies St<br>Mooikloof Ridge<br> Pretoria<br> 0081</p>
+                        
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>info@mannyaconsultants.com</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>0794903136</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required" ></textarea>
+                        <span>Type your Message</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
 </body>
+
+<script>
+    let menuopacity = document.querySelector(".menu-opacity");
+    
+    function openMenu() {
+        menuopacity.classList.add("open-menu");
+        
+    }
+    
+  
+    function closeMenu() {
+        menuopacity.classList.remove("open-menu");
+        
+    }
+  </script>
+<script>
+    var slideImg=document.getElementById("slideImg");
+
+    var images = new Array(
+        "pexels-christian-fohrer-1804061.jpg",
+        "pexels-lumn-612109.jpg",
+        "pexels-pixabay-417273.jpg"
+        
+    
+    );
+
+    var len =images.length;
+    var i =0;
+
+    function slider(){
+        if(i >len-1){
+            i=0;
+        }
+        slideImg.src =slideImg.src=images[i];
+        i++;
+        setTimeout('slider()',3000);
+    }
+
+</script>
 </html>
