@@ -697,7 +697,7 @@ header{
     font-size: 50px;
     line-height: 1.2;
     font-weight: 400;
-    
+    text-align: center;
 
 }
 
@@ -707,6 +707,7 @@ header{
     line-height: 1.8;
     font-weight: 400;
     color: #999999;
+    text-align: center;
 }
 
 .Book-btn{
@@ -936,6 +937,11 @@ header{
     .Gallery-image img{
         width: 360px;
 
+    }
+
+    .Room-detail-wrapper {
+        padding: 30px;
+       
     }
     
 }
