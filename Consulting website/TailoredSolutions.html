@@ -21,7 +21,7 @@
     </div>
     <header>
         <div class="slider">
-            <img src="pexels-eric-sanman-405848.jpg" id="slideImg" alt="">
+            <img src="pexels-valentin-antonucci-860963.jpg" id="slideImg" alt="">
         </div>
         <div class="overlay">
             <nav>
@@ -29,7 +29,7 @@
                     <span class="left-nav">GET IN TOUCH  </span><i style="color: #fff;" class="fa fa-search" aria-hidden="true"></i>
                 </div>
                 <div class="word-logo" >
-                    <h1>CONTACT</h1>
+                    <h1>TAILORED SOLUTIONS</h1>
                     
                 </div>
                 
@@ -59,9 +59,10 @@
                 <div class="menu-options">
                     <ul>
                         <li><a href="Index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">About</a></li>
                         <li><a href="service.html">Service</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        
                     </ul>
                 </div>
                 <div class="right-opacity">
@@ -73,69 +74,31 @@
             
         </div>
     </header>
+  
+    <section class="about">
 
-
-    <section class="contact">
         
-        <div class="content">
-            <h1 >Contact</h1>
-            <p >Ready to enhance your construction projects with our expertise? Reach out to us</p>
-        </div>
-        <div class="contact-container">
-            <div class="contactInfo">
-                <div class="box2">
-                    <div class="icon">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    </div>
-                    <div class="text">
-                        <h3>Address</h3>
-                        <p>2 Augrabies St<br>Mooikloof Ridge<br> Pretoria<br> 0081</p>
-                        
-                    </div>
-                </div>
-                <div class="box2">
-                    <div class="icon">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </div>
-                    <div class="text">
-                        <h3>Email</h3>
-                        <p>info@mannyaconsultants.com</p>
-                    </div>
-                </div>
-                <div class="box2">
-                    <div class="icon">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                    </div>
-                    <div class="text">
-                        <h3>Phone</h3>
-                        <p>0794903136</p>
-                    </div>
-                </div>
-            </div>
-            <div class="contactForm">
-                <form>
-                    <h2>Send Message</h2>
-                    <div class="inputBox">
-                        <input type="text" name="" required="required">
-                        <span>Full Name</span>
-                    </div>
-                    <div class="inputBox">
-                        <input type="text" name="" required="required">
-                        <span>Email</span>
-                    </div>
-                    <div class="inputBox">
-                        <textarea required="required" ></textarea>
-                        <span>Type your Message</span>
-                    </div>
-                    <div class="inputBox">
-                        <input type="submit" name="" value="Send">
+        <div class="about-content">
+            <h2 style="margin-top: 30px;">Tailored Solutions for Your </h2>
+            <div><span>Construction Projects</span></div>
+            
+            <p>Mannya Consulting offers a comprehensive range of tailored solutions to meet the diverse needs of construction projects across Gauteng and beyond. Our expertise spans across various sectors including residential, commercial, industrial, and infrastructure development.
 
-                    </div>
-                </form>
-            </div>
+                Driven by a passion for innovation and efficiency, our team utilizes cutting-edge technology and advanced engineering principles to deliver solutions that are both sustainable and cost-effective. From initial concept design to project completion, we remain committed to delivering high-quality results within budget and on schedule.
+                
+                At Mannya Consulting, we understand the importance of clear communication and collaboration throughout the project lifecycle. Our consultants work closely with clients to ensure their vision is brought to life, while also providing expert guidance and advice every step of the way.
+                
+                </p>
+
+                <p>In addition to our core engineering services, we also offer specialized consulting services such as feasibility studies, risk management, and sustainability assessments. By taking a holistic approach to project management, we help our clients navigate complex challenges and achieve their goals with confidence.
+                
+                    With a reputation built on reliability, professionalism, and integrity, Mannya Consulting is your trusted partner for all your engineering consultancy needs. Contact us today to learn more about how we can support your next construction project.</p>
+            <a class="read-more" href="Index.html">BACK</a>
         </div>
+      
+
     </section>
-    
+
 </body>
 
 
@@ -200,30 +163,7 @@
         
     }
   </script>
-<script>
-    var slideImg=document.getElementById("slideImg");
 
-    var images = new Array(
-        "pexels-christian-fohrer-1804061.jpg",
-        "pexels-lumn-612109.jpg",
-        "pexels-pixabay-417273.jpg"
-        
-    
-    );
-
-    var len =images.length;
-    var i =0;
-
-    function slider(){
-        if(i >len-1){
-            i=0;
-        }
-        slideImg.src =slideImg.src=images[i];
-        i++;
-        setTimeout('slider()',3000);
-    }
-
-</script>
 
 
 </html>

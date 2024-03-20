@@ -21,7 +21,7 @@
     </div>
     <header>
         <div class="slider">
-            <img src="pexels-christian-fohrer-1804061.jpg" id="slideImg" alt="">
+            <img src="pexels-jim-1118786" id="slideImg" alt="">
         </div>
         <div class="overlay">
             <nav>
@@ -93,7 +93,7 @@
                 close attention to detail, while producing creative and innovative designs.
                 Our engineering consultants pride themselves on forming authentic, lasting and transparent
                 relationships with our clients, rooted in mutual trust and integrity.</p>
-            <a class="read-more" href="#">Read More</a>
+            <a class="read-more" href="TailoredSolutions.html">Read More</a>
         </div>
       
 
@@ -165,6 +165,20 @@
         </div>
     </section>
 
+    
+
+    <div class="heading" style="background: #fbfbfb;color: #333;">
+        <h1 style="background: #fbfbfb; ">Founder</h1>
+        <p style="background: #fbfbfb; ">Meet the Visionary Founder Behind Mannya Consulting: Guiding Excellence in Engineering</p>
+    </div>
+    <section class="founder">
+        <img src="Tshego png.png" style="width: 400px; height: 500px;">
+        <div class="about-content" style="padding-right: 20px;padding-bottom: 50px;">
+            <span>Tshegofatso Mannya Mamotheti</span>
+            <p>Our founder, a young and ambitious leader, embarked on his journey in engineering at Tshwane University of Technology, where he earned his degree in Civil Engineering. With a passion for innovation and a drive for excellence, he quickly established himself in the consulting field, gaining invaluable experience along the way. Armed with a deep understanding of engineering principles and a keen eye for detail, he leads Mannya Consulting with a vision to surpass industry standards and redefine excellence in the field. Committed to client satisfaction and continuous improvement, our founder inspires our team to push boundaries and deliver innovative solutions for every project we undertake.</p>
+            
+        </div>
+    </section>
     <section class="contact">
         
         <div class="content">
@@ -203,14 +217,14 @@
                 </div>
             </div>
             <div class="contactForm">
-                <form>
+                <form onsubmit="sendEmail(); return false;">
                     <h2>Send Message</h2>
                     <div class="inputBox">
                         <input type="text" name="" required="required">
                         <span>Full Name</span>
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="" required="required">
+                        <input type="email" id="email" name="" required="required">
                         <span>Email</span>
                     </div>
                     <div class="inputBox">
@@ -218,7 +232,8 @@
                         <span>Type your Message</span>
                     </div>
                     <div class="inputBox">
-                        <input type="submit" name="" value="Send">
+                        
+                        <button type="submit">Send</button>
 
                     </div>
                 </form>
@@ -228,7 +243,22 @@
     
 </body>
 
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "morwamanku123@gmail.com",
+            Password : "E6D5DCA325C777932349AEFD6EA27ED1452F",
+            To : 'morwamanku123@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "New Contact Form Enquiry",
+            Body : "And this is the body"
+            }).then(
+            message => alert(message)
+            );
+        }
+    </script>
     <script>
     
     anime.timeline()
@@ -294,7 +324,7 @@
     var slideImg=document.getElementById("slideImg");
 
     var images = new Array(
-        "pexels-christian-fohrer-1804061.jpg",
+        "pexels-jim-1118786.jpg",
         "pexels-lumn-612109.jpg",
         "pexels-pixabay-417273.jpg"
         

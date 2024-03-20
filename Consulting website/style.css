@@ -379,7 +379,17 @@ section{
     font-family: "Old Standard TT", Arial, sans-serif;
 }
 
-
+.founder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: auto;
+    background: #fbfbfb;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-bottom: 0px;
+}
 
 
 .about{
@@ -412,6 +422,11 @@ section{
 
 .about-content{
     flex: 1;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 .about-content h2{
@@ -643,7 +658,6 @@ section{
 
 
 
-
 @media screen and (max-width:768px){
     .about{
         padding: 20px;
@@ -697,6 +711,10 @@ section{
         margin-top: 200px;
     }
 
+    .founder{
+        padding: 20px;
+        flex-direction: column;
+    }
    
     
 
