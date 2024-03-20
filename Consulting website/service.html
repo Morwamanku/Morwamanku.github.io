@@ -21,15 +21,15 @@
     </div>
     <header>
         <div class="slider">
-            <img src="pexels-christian-fohrer-1804061.jpg" id="slideImg" alt="">
+            <img src="pexels-pixabay-416405.jpg" id="slideImg" alt="">
         </div>
         <div class="overlay">
             <nav>
                 <div class="search">
                     <span class="left-nav">GET IN TOUCH  </span><i style="color: #fff;" class="fa fa-search" aria-hidden="true"></i>
                 </div>
-                <div class="logo">
-                    <img src="white Manya_Logo-removebg-preview.png" alt="">
+                <div class="word-logo" >
+                    <h1>SERVICE</h1>
                     
                 </div>
                 
@@ -58,10 +58,10 @@
             <div class="sub-menu-opacity">
                 <div class="menu-options">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Service</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a class="active" href="#">Service</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                         
                     </ul>
                 </div>
@@ -270,30 +270,7 @@
         
     }
   </script>
-<script>
-    var slideImg=document.getElementById("slideImg");
 
-    var images = new Array(
-        "pexels-christian-fohrer-1804061.jpg",
-        "pexels-lumn-612109.jpg",
-        "pexels-pixabay-417273.jpg"
-        
-    
-    );
-
-    var len =images.length;
-    var i =0;
-
-    function slider(){
-        if(i >len-1){
-            i=0;
-        }
-        slideImg.src =slideImg.src=images[i];
-        i++;
-        setTimeout('slider()',3000);
-    }
-
-</script>
 
 
 </html>

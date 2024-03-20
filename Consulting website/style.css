@@ -78,6 +78,9 @@ nav{
     justify-content: space-between;
     padding: 15px;
 }
+.active{
+    color: red;
+}
 
 .search{
     display: flex;
@@ -107,6 +110,15 @@ nav{
     width: 350px;
     margin-top: 200px;
 
+}
+
+.word-logo{
+    margin-top: 250px;
+}
+
+.word-logo h1{
+    font-size: 300%;
+    color: #fff;
 }
 
 .logo img{
@@ -681,10 +693,12 @@ section{
     }
 
     .logo{
-    width: 350px;
-    margin-top: 200px;
+        width: 350px;
+        margin-top: 200px;
+    }
 
-}
+   
+    
 
 
 }
