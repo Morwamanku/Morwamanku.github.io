@@ -493,6 +493,72 @@ img{
   margin-top: 3.5rem;
 }
 
+/*========== Testimonial Container ==========*/
+
+.testimonial-container{
+  display:flex ;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+.testimonial{
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  padding: 50px 0;
+  row-gap: 30px;
+  overflow: hidden;
+}
+
+.testimonial .image{
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+.testimonial .slide{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.slide p{
+  text-align: center;
+  padding: 0px 70px;
+  font-size: 14px;
+  font-weight: 500;
+
+}
+
+.slide .bx {
+  font-size: 30px;
+  color: #4070f4;
+}
+
+.slide .details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details .name{
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.details .job{
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
 /*========== MEDIA QUERIES ==========*/
 @media screen and (min-width: 576px){
   .home__container,
@@ -511,6 +577,7 @@ img{
   .about__img, .app__img{
     width: 480px;
     order: -1;
+    height: 350px;
   }
 
   .contact__container{

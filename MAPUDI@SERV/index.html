@@ -7,6 +7,11 @@
         <!--========== BOX ICONS ==========-->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
+        <!--========== Swiper ==========-->
+        <link rel="stylesheet" href="swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+        
         <!--========== CSS ==========-->
         <link rel="stylesheet" href="assets/css/styles.css">
         <script type="text/javascript">
@@ -44,7 +49,7 @@
                                 <li><a href="#service3" class="nav__link">BENEFICIAL OWNERSHIP INFORMATION</a></li>
                             </ul>
                         </li>
-                        <li class="nav__item"><a href="#menu" class="nav__link">Packages</a></li>
+                        <li class="nav__item"><a href="#reviews" class="nav__link">Reviews</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
 
                         <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
@@ -111,7 +116,7 @@
             </section>
 
             <!--========== MENU ==========-->
-            <section class="menu section bd-container" id="menu">
+            <!-- <section class="menu section bd-container" id="menu">
                 <span class="section-subtitle">Special</span>
                 <h2 class="section-title">Packages</h2>
 
@@ -163,9 +168,83 @@
                         <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
-            
+
+            <!--========== Testimonial ==========-->
+            <span class="section-subtitle" style="margin-top: 100px;" id="reviews">Reviews</span>
+            <h2 class="section-title">Testimonial</h2>
+            <section class="testimonial-container">
+                <div class="testimonial mySwiper">
+                    <div class="testi-content swiper-wrapper">
+                        <div class="slide swiper-slide">
+                            <img src="Phogole Smile.jpg" class="image" alt="">
+                            
+                            <p>I recently had the pleasure of purchasing a t-shirt from Angel Number Apparel, and I must say, it has quickly become a favorite in my wardrobe rotation.
+        
+                                Let's start with the fabric. The moment I slipped this shirt on, I was struck by how soft and luxurious it felt against my skin. 
+                                Crafted from high-quality materials, it offers a level of comfort that is truly unmatched. 
+                                Whether I'm lounging at home or running errands around town, this shirt keeps me feeling cozy and at ease all day long.</p>
+                                <i class='bx bxs-quote-alt-right' ></i>
+        
+                            <div class="details">
+                                <span class="name">Marnie Lotter</span>
+                                <span class="job">Web Developer</span>
+                            </div>
+                        </div>
+                        <div class="slide swiper-slide">
+                            <img src="test2.jpg" class="image" alt="">
+                            
+                            <p>I recently had the pleasure of purchasing a t-shirt from Angel Number Apparel, and I must say, it has quickly become a favorite in my wardrobe rotation.
+        
+                                Let's start with the fabric. The moment I slipped this shirt on, I was struck by how soft and luxurious it felt against my skin. 
+                                Crafted from high-quality materials, it offers a level of comfort that is truly unmatched. 
+                                Whether I'm lounging at home or running errands around town, this shirt keeps me feeling cozy and at ease all day long.</p>
+                                <i class='bx bxs-quote-alt-right' ></i>
+        
+                            <div class="details">
+                                <span class="name">Marnie Lotter</span>
+                                <span class="job">Web Developer</span>
+                            </div>
+                        </div>
+                        <div class="slide swiper-slide">
+                            <img src="test3.jpg" class="image" alt="">
+                            
+                            <p>I recently had the pleasure of purchasing a t-shirt from Angel Number Apparel, and I must say, it has quickly become a favorite in my wardrobe rotation.
+        
+                                Let's start with the fabric. The moment I slipped this shirt on, I was struck by how soft and luxurious it felt against my skin. 
+                                Crafted from high-quality materials, it offers a level of comfort that is truly unmatched. 
+                                Whether I'm lounging at home or running errands around town, this shirt keeps me feeling cozy and at ease all day long.</p>
+                                <i class='bx bxs-quote-alt-right' ></i>
+        
+                            <div class="details">
+                                <span class="name">Marnie Lotter</span>
+                                <span class="job">Web Developer</span>
+                            </div>
+                        </div>
+                        <div class="slide swiper-slide">
+                            <img src="test4.jpg" class="image" alt="">
+                            
+                            <p>I recently had the pleasure of purchasing a t-shirt from Angel Number Apparel, and I must say, it has quickly become a favorite in my wardrobe rotation.
+        
+                                Let's start with the fabric. The moment I slipped this shirt on, I was struck by how soft and luxurious it felt against my skin. 
+                                Crafted from high-quality materials, it offers a level of comfort that is truly unmatched. 
+                                Whether I'm lounging at home or running errands around town, this shirt keeps me feeling cozy and at ease all day long.</p>
+                                <i class='bx bxs-quote-alt-right' ></i>
+        
+                            <div class="details">
+                                <span class="name">Marnie Lotter</span>
+                                <span class="job">Web Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+        
+                </div>
+                
+            </section>
 
             <!--========== CONTACT US ==========-->
             <section class="contact section bd-container" id="contact">
@@ -183,34 +262,14 @@
             </section>
         </main>
 
-        <form>
-            <div>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
+        
 
-            <div>
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" required>
-            </div>
-
-            <div>
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" required>
-            </div>
-
-            <div>
-                <label for="message">Message</label>
-                <input type="text" id="message" rows="4" name="message" required>
-            </div>
-            <button type="submit" onclick="sendMail()">Send</button>
-        </form>
         <!--========== FOOTER ==========-->
         <footer class="footer section bd-container">
             <div class="footer__container bd-grid">
                 <div class="footer__content">
-                    <a href="#" class="footer__logo">Tasty Food</a>
-                    <span class="footer__description">Restaurant</span>
+                    <a href="#" class="footer__logo">MAPUDI@SERV</a>
+                    <!-- <span class="footer__description">Restaurant</span> -->
                     <div>
                         <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
                         <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
@@ -258,6 +317,21 @@
         <!--========== MAIN JS ==========-->
         <script src="assets/js/main.js"></script>
 
-       
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              slidesPerView: 1,
+              spaceBetween: 30,
+              loop: true,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
     </body>
 </html>
