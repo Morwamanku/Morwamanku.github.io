@@ -6,7 +6,7 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  --first-color: #069C54;
+  --first-color: #8cc63f;;
   --first-color-alt: #048654;
   --title-color: #393939;
   --text-color: #707070;
@@ -312,13 +312,15 @@ img{
 
 /*========== BUTTONS ==========*/
 .button{
-  display: inline-block;
-  background-color: var(--first-color);
-  color: #FFF;
-  padding: .75rem 1rem;
-  border-radius: .5rem;
-  transition: .3s;
+    display: inline-block;
+    background-color: #8cc63f;
+    color: black;
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    transition: .3s;
+    font-weight: 500;
 }
+
 
 .button:hover{
   background-color: var(--first-color-alt);
@@ -538,7 +540,7 @@ img{
 
 .slide .bx {
   font-size: 30px;
-  color: #4070f4;
+  color:  #8cc63f;
 }
 
 .slide .details{
