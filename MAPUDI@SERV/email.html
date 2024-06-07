@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "dnpMjFp53mAHra-Um",
+        });
+    })();
+    </script>
+</head>
+
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+    }
+
+    .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .container div {
+        margin-bottom: 15px;
+    }
+
+    .container label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .container input, .container textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .container button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .container button:hover {
+        background-color: #0056b3;
+    }
+</style>
+<body>
+
+    <button type="submit">Submitstuff</button>
+
+
+    <div class="container">
+        <form id="contactForm">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+    
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div>
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+    
+            <div>
+                <label for="message">Message</label>
+                <input type="text" id="message" rows="4" name="message" required>
+            </div>
+            <button type="submit" onclick="sendMail()">Send</button>
+        </form>
+    </div>
+    
+</body>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        sendMail();
+    });
+
+    function sendMail(){
+        let parms= {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            subject: document.getElementById("subject").value,
+            message: document.getElementById("message").value,
+        };
+
+        emailjs.send("service_9vckrbn","template_mb3tejl",parms)
+            .then(function(response) {
+                alert("Email sent!");
+            }, function(error) {
+                alert("Failed to send email. Error: " + JSON.stringify(error));
+            });
+    }
+</script>
+</html>
