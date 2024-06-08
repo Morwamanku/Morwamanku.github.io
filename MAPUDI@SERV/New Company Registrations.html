@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== Swiper ==========-->
+        <link rel="stylesheet" href="swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+        <title>MAPUDI@SERV</title>
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+               emailjs.init({
+                 publicKey: "sQ5WioG0nYFpNlbMH",
+               });
+            })();
+         </script>
+        
+        
+
+    </head>
+    <body>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo"><img src="logo.png" alt="" style="width: 100px;"></a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item dropdown">
+                            <a href="#" class="nav__link">Services</a>
+                            <ul class="dropdown-content">
+                                <li><a href="New Company Registrations.html" class="nav__link">New Company Registrations – (PTY) LTD</a></li>
+                                <li><a href="NEW NON-PROFIT COMPANY.html" class="nav__link">NEW NON-PROFIT COMPANY</a></li>
+                                <li><a href="Amendments to Company Details.html" class="nav__link">Amendments of the Company Directors</a></li>
+                                <li><a href="Amendments to Company Details.html" class="nav__link">Amendment of Addresses of the Company</a></li>
+                                <li><a href="Amendments to Company Details.html" class="nav__link">Amendment of the Name of the Company</a></li>
+                                <li><a href="Annual Returns.html" class="nav__link">ANNUAL RETURNS</a></li>
+                                <li><a href="Restoration of Companies.html" class="nav__link">RESTORATION OF COMPANIES</a></li>
+                                <li><a href="Beneficial Ownership Information.html" class="nav__link">BENEFICIAL OWNERSHIP INFORMATION</a></li>
+                                <li><a href="Share Certificates.html" class="nav__link">SHARE CERTIFICATES</a></li>
+                                <li><a href="CSD Registeration.html" class="nav__link">CSD REGISTRATION</a></li>
+                                <li><a href="COIDA registeration.html" class="nav__link">COIDA REGISTRATION</a></li>
+                                <li><a href="Tax Services.html" class="nav__link">TAX SERVICES: TAX/VAT/PAYE/UIF/ TAX CLEARANCE</a></li>
+                                <li><a href="PUBLIC OFFICER APPOINTMENT.html" class="nav__link">PUBLIC OFFICER APPOINTMENT – SARS</a></li>
+                                <li><a href="IMPORT and EXPORT LICENCE.html" class="nav__link">IMPORT &amp; EXPORT LICENCE</a></li>
+                                <li><a href="CIDB REGISTRATION.html" class="nav__link">CIDB REGISTRATION</a></li>
+                                <li><a href="PSIRA Registeration.html" class="nav__link">PSIRA REGISTRATION</a></li>
+                                <li><a href="UIF.html" class="nav__link">UIF REGISTRATION</a></li>
+                                <li><a href="NHBRC.html" class="nav__link">NHBRC</a></li>
+                                <li><a href="BEE AFFIDAVIT.html" class="nav__link">BEE AFFIDAVIT</a></li>
+                                <li><a href="TRADEMARKS.html" class="nav__link">TRADEMARKS</a></li>
+                                <li><a href="TENDER PACKAGES.html" class="nav__link">TENDER PACKAGES</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item"><a href="#reviews" class="nav__link">Reviews</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main" style="margin-top: 100px;">
+            
+            
+            <!--========== ABOUT ==========-->
+            <section class="about section bd-container" id="about">
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        <span class="section-subtitle about__initial">Service</span>
+                        <h2 class="section-title about__initial">New Company Registrations – (PTY) LTD</h2>
+                        <p class="about__description">Assistance in compiling and submitting information regarding the beneficial owners of a company, as required by law</p>
+                        <h2>R350</h2>
+                        <h3>Duration: 2 Days</h3>
+                        <a href="#" class="button" id="open-popup-btn">Explore</a>
+                    </div>
+
+                    <img src="pexels-shkrabaanthony-5467600.jpg" alt="" class="about__img">
+                </div>
+            </section>
+
+
+            <div id="popup-form" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Sign Up</h2>
+                    <form id="contactForm">
+                        <label for="Name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="Email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="message">Message</label>
+                        <input type="text" id="message" rows="4" name="message" required>
+                        <button type="submit" onclick="sendMail()">Send</button>
+                    </form>
+                </div>
+            </div>
+
+            
+        </main>
+
+        
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo"><img src="logo.png" alt="" style="width: 200px;"></a>
+                    <!-- <span class="footer__description">Restaurant</span> -->
+                    <div>
+                        <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+
+              
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">About</a></li>
+                        <li><a href="#" class="footer__link">Contact us</a></li>
+                        <li><a href="#" class="footer__link">Privacy policy</a></li>
+                        <li><a href="#" class="footer__link">Terms of services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Adress</h3>
+                    <ul>
+                        <li>100 Silverlakes</li>
+                        <li>Jr Union #999</li>
+                        <li>0793531647</li>
+                        <li>mapudiserv@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+      
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              slidesPerView: 1,
+              spaceBetween: 30,
+              loop: true,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+        </script>
+
+          <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    const openPopupBtn = document.getElementById('open-popup-btn');
+                    const popupForm = document.getElementById('popup-form');
+                    const closeBtn = document.querySelector('.close-btn');
+
+                    openPopupBtn.addEventListener('click', () => {
+                        popupForm.style.display = 'flex';
+                    });
+
+                    closeBtn.addEventListener('click', () => {
+                        popupForm.style.display = 'none';
+                    });
+
+                    window.addEventListener('click', (event) => {
+                        if (event.target === popupForm) {
+                            popupForm.style.display = 'none';
+                        }
+                    });
+                });
+            </script>
+
+    </body>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            sendMail();
+        });
+
+        function sendMail(){
+            let parms= {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                subject: document.getElementById("subject").value,
+                message: document.getElementById("message").value,
+            };
+
+            emailjs.send("service_9vckrbn","template_mb3tejl",parms)
+                .then(function(response) {
+                    alert("Email sent!");
+                }, function(error) {
+                    alert("Failed to send email. Error: " + JSON.stringify(error));
+                });
+        }
+    </script>
+</html>
