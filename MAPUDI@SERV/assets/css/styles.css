@@ -496,6 +496,16 @@ img{
   border-radius: .5rem 0 .5rem 0;
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  opacity: 0; /* Ensure elements are hidden before animation starts */
+  animation: fadeIn 2s forwards; /* Animation duration and forwards to retain end state */
+}
+
 /*========== APP ==========*/
 .app__data{
   text-align: center;

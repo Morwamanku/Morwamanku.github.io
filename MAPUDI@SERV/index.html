@@ -33,7 +33,7 @@
         <!--========== HEADER ==========-->
         <header class="l-header" id="header">
             <nav class="nav bd-container">
-                <a href="#" class="nav__logo"><img src="logo.png" alt="" style="width: 100px;"></a>
+                <a href="#" class="nav__logo"><img src="logo latest.png" alt="" style="width: 100px;"></a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
@@ -80,15 +80,14 @@
             <!--========== HOME ==========-->
             <section class="home" id="home" style="background: rgba(0, 0, 0, 0.4); background-image: url(african-american-research-agency-coworkers-meeting-about-startup-project-financial-status-business-people-desk-company-office-finance-department-talking-about-marketing-expenses.jpg); background-size: cover;">
                 <div class="home__container  bd-grid">
-                  <div class="home__data ">
-                    <!-- <h1 class="home__title" style="color: beige;">MAPUDI<span style="color: black;">@SERV</span></h1> -->
-                    <h2 class="home__subtitle" style="color: aliceblue;">Focused @Service Xceding Xpectations!!</h2>
-                    <p style="margin-bottom: 30px; color: darkseagreen;">Partnering in your journey, delivering service that exceeds expectations</p>
+                  <div class="home__data">
+                    <h2 class="home__subtitle" id="animatedSubtitle" style="color: aliceblue;">Focused @Service Xceding Xpectations!!</h2>
+                    <p id="animatedParagraph" style="margin-bottom: 30px; color: darkseagreen;">Partnering in your journey, delivering service that exceeds expectations</p>
                     <a href="#" class="button">Explore</a>
                   </div>
                   <div class="overlay"></div>
                 </div>
-              </section>
+              </section>              
               
             
             
@@ -136,26 +135,34 @@
             </section>
             <!--========== SERVICES ==========-->
             <section class="services section bd-container " >
-                <span class="section-subtitle">Offering</span>
-                <h2 class="section-title">Our amazing services</h2>
+                <span class="section-subtitle">How to Start</span>
+                <h2 class="section-title">Steps to take.</h2>
 
                 <div class="services__container  bd-grid">
                     <div class="services__content">
-                        <img src="register.png" width= "200px" alt="">
-                        <h3 class="services__title">COMPANY REGISTRATION</h3>
-                        <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                        <img src="icons8-check-list.gif" width= "90px" alt="">
+                        <h3 class="services__title">Step 1</h3>
+                        <p class="services__description">
+                            Sign up and order your services now or simply call us on
+                            0793531647 for assistance.</p>
                     </div>
 
                     <div class="services__content">
-                        <img src="service.png" width= "200px" alt="">
-                        <h3 class="services__title">AMENDMENTS</h3>
-                        <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                        <img src="icons8-upload.gif" width= "90px" alt="">
+                        <h3 class="services__title">Step 2</h3>
+                        <p class="services__description">Upload the vital info and documents to your service</p>
                     </div>
 
                     <div class="services__content">
-                        <img src="document.png" width= "200px" alt="">
-                        <h3 class="services__title">CSD REGISTRATION</h3>
-                        <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
+                        <img src="icons8-message.gif" width= "90px" alt="">
+                        <h3 class="services__title">STEP 3</h3>
+                        <p class="services__description">Get updates via SMS and Email on the progress of your service.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <img src="icons8-hands-in-a-handshake.gif" width= "90px" alt="">
+                        <h3 class="services__title">STEP 4</h3>
+                        <p class="services__description">Receive your company documents via email.</p>
                     </div>
                 </div>
             </section>
@@ -299,7 +306,7 @@
         <footer class="footer section" style="background: #f4f4f4;;">
             <div class="footer__container bd-grid">
                 <div class="footer__content">
-                    <a href="#" class="footer__logo"><img src="logo.png" alt="" style="width: 200px;"></a>
+                    <a href="#" class="footer__logo"><img src="logo latest.png" alt="" style="width: 200px;"></a>
                     <!-- <span class="footer__description">Restaurant</span> -->
                     <div>
                         <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
@@ -354,6 +361,13 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
               },
+            });
+          </script>
+
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('animatedSubtitle').classList.add('fade-in');
+            document.getElementById('animatedParagraph').classList.add('fade-in');
             });
           </script>
     </body>
