@@ -276,9 +276,11 @@ img{
 /* Show the dropdown on hover */
 .nav__item.dropdown:hover .dropdown-content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Two columns */
+  grid-template-columns: repeat(1, 1fr); /* Two columns */
   gap: 10px;
   width: 500px;
+  justify-content: center;
+  text-align: center;
 }
 
 /* Add some hover effects to dropdown links */
@@ -286,6 +288,13 @@ img{
   background-color: #ddd;
 }
 
+.contactnav{
+  background: #8cc63f;
+    padding: 10px;
+    border-radius: 25px;
+    color: wheat;
+    list-style: none;
+}
 
 .homeback{
   background-image: url(pexels-pavel-danilyuk-7654193.jpg);
@@ -784,6 +793,11 @@ button[type="submit"] {
     display: none;
   }
 
+  .nav__item.dropdown:hover .dropdown-content {
+    grid-template-columns: repeat(1, 1fr); /* Two columns for smaller screens */
+    width: 200px; /* Adjusted width */
+}
+
   .change-theme{
     position: initial;
     margin-left: var(--mb-2);
@@ -833,19 +847,4 @@ button[type="submit"] {
   }
 }
 
-
-
-@media (max-width: 1300px) {
-  .nav__item.dropdown:hover .dropdown-content {
-      grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
-      width: 400px; /* Adjusted width */
-  }
-}
-
-@media (max-width: 1100px) {
-  .nav__item.dropdown:hover .dropdown-content {
-      grid-template-columns: repeat(1, 1fr); /* Two columns for smaller screens */
-      width: 400px; /* Adjusted width */
-  }
-}
 
