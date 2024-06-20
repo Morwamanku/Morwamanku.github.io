@@ -174,15 +174,28 @@ img{
     border-radius: 0 0 1rem 1rem;
     z-index: var(--z-fixed);
   }
+
+  .contactnav{
+    display: none;
+  }
+
+  .nav__logo{
+    width: 60px;
+    margin-top: 10px;
+  }
 }
 
 .nav__item{
   margin-bottom: var(--mb-2);
 }
 
-.nav__link, .nav__logo, .nav__toggle{
+.nav__link, .nav__toggle{
   color: var(--text-color);
   font-weight: var(--font-medium);
+}
+
+.nav__logo{
+  width: 80px;
 }
 
 .nav__logo:hover{
@@ -770,11 +783,14 @@ button[type="submit"] {
 
 }
 
+
+
 @media screen and (min-width: 768px){
   body{
     margin: 0;
   }
 
+  
   .section{
     padding-top: 8rem;
   }
@@ -845,6 +861,8 @@ button[type="submit"] {
   .app__container{
     column-gap: 7rem;
   }
+
+ 
 }
 
 
