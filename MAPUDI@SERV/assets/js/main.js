@@ -116,3 +116,14 @@ function sendMail(){
 
     emailjs.send("service_9vckrbn","template_mb3tejl",parms).then(alert("Email sent!!"))
 }
+
+
+
+const serviceLink = document.querySelectorAll('service')
+
+function linkAction(){
+    const navMenu = document.getElementById('service-link')
+    // When we click on each nav__link, we remove the show-menu class
+    navMenu.classList.remove('show-menu')
+}
+serviceLink.forEach(n => n.addEventListener('click', linkAction))
