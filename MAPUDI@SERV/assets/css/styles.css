@@ -433,11 +433,12 @@ img{
   background:#F4F7FE;
   border-radius: 25px; 
   display: flex; 
-  flex-direction:
-  column;box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  flex-direction:column;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   margin-bottom: 35px;
+  
 }
 
 .topservice img{
@@ -462,12 +463,19 @@ img{
   text-align: center;
   display: inline-block;
     background-color: #8cc63f;
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 10px;
     border-radius: .5rem;
     transition: .3s;
     font-weight: 500;
     margin-inline: auto;
+
+}
+.topservice button:hover{
+  font-weight: bold;
+  background-color: var(--first-color-alt);
+  padding: 16px;
+ 
 }
 
 /*========== MENU ==========*/
