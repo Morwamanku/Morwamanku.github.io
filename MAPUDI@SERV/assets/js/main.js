@@ -119,7 +119,7 @@ function sendMail(){
 
 
 
-const serviceLink = document.querySelectorAll('service')
+const serviceLink = document.querySelectorAll('.service')
 
 function linkAction(){
     const navMenu = document.getElementById('service-link')
