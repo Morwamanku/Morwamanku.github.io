@@ -117,7 +117,7 @@ img{
 }
 
 .section-title{
-  font-size: var(--h1-font-size);
+  font-size: 30px;
   color: var(--title-color);
   margin-bottom: var(--mb-3);
 }
@@ -741,7 +741,7 @@ img{
 .popup {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   left: 0;
   top: 0;
   width: 100%;
@@ -749,6 +749,11 @@ img{
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
+}
+
+.popup select {
+  padding: 8px;
+  font-size: 14px;
 }
 
 .popup-content {
@@ -788,6 +793,12 @@ button[type="submit"] {
   padding: 10px;
   font-size: 16px;
   cursor: pointer;
+}
+
+@media (max-height: 600px) {
+  .nav__item.dropdown:hover .dropdown-content {
+      grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 

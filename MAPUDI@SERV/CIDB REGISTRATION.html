@@ -42,10 +42,10 @@
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="index.html" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
                         <li class="nav__item"><a href="About.html" class="nav__link">About</a></li>
                         <li class="nav__item dropdown">
-                            <a href="#" class="nav__link">Services</a>
+                            <a href="#" class="nav__link active-link">Services</a>
                             <ul class="dropdown-content">
                                 <li><a href="New Company Registrations.html" style="background: red; color: black;" class="nav__link">NEW COMPANY REGISTRATIONS: (Pty) Ltd/INC/CO-OP</a></li>
                                 <li><a href="NEW NON-PROFIT COMPANY.html"  class="nav__link">NEW NON-PROFIT COMPANY</a></li>
@@ -102,19 +102,19 @@
                     <div class="services__content">
                         <img src="icons8-phone-ringing.gif" width= "100px" alt="">
                         <h3 class="services__title">Call centre</h3>
-                        <p class="services__description">(+27)793531647</p>
+                        <p class="services__description">+27 82 221 7802</p>
                     </div>
 
                     <div class="services__content">
                         <img src="icons8-gmail-logo.gif" width= "100px" alt="">
                         <h3 class="services__title">Email</h3>
-                        <p class="services__description">mapudiserv@gmail.com</p>
+                        <p class="services__description">support@mapudi.co.za</p>
                     </div>
 
                     <div class="services__content">
                         <img src="icons8-whatsapp.gif" width= "100px" alt="">
                         <h3 class="services__title">Whatsapp</h3>
-                        <p class="services__description">(+27)793531647</p>
+                        <p class="services__description">+27 82 221 7802</p>
                     </div>
                 </div>
             </section>
@@ -123,15 +123,35 @@
             <div id="popup-form" class="popup">
                 <div class="popup-content">
                     <span class="close-btn">&times;</span>
-                    <h2>Sign Up</h2>
+                    <img src="logo latest.png" alt="" style="width: 100px;">
+                    <h2>CONSULT</h2>
                     <form id="contactForm">
-                        <label for="Name">Name:</label>
+
+                        <label for="Name">Fullname:</label>
                         <input type="text" id="name" name="name" required>
-                        <label for="Email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                        <label for="message">Message</label>
+                        <label for="Name">Email</label>
+                        <input type="text" id="email" name="email" required>
+                        <label for="Name">Contact</label>
+                        <input type="text" id="contact" name="contact" required>
+                        <label for="Name">Company registration Number</label>
+                        <input type="text" id="CompanyRegistrationNumber" name="CompanyRegistrationNumber" required>
+                        <label for="options">Choose an option:</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">--Select--</option>
+                            <option value="NEW COMPANY REGISTRATIONS: (Pty) Ltd/INC/CO-OP">NEW COMPANY REGISTRATIONS: (Pty) Ltd/INC/CO-OP</option>
+                            <option value="RESTORATION/RE-INSTATEMENT OF COMPANIES">RESTORATION/RE-INSTATEMENT OF COMPANIES</option>
+                            <option value="SHARE CERTIFICATES">SHARE CERTIFICATES</option>
+                            <option value="FILING OF ANNUAL RETURNS">FILING OF ANNUAL RETURNS</option>
+                            <option value="BENEFICIAL OWNERSHIP INFORMATION – REGISTER">BENEFICIAL OWNERSHIP INFORMATION – REGISTER</option>
+                            <option value="TAX RELATED SERVICES (Returns/Clearance/Profile Change/UIF/PAYE)">TAX RELATED SERVICES (Returns/Clearance/Profile Change/UIF/PAYE)</option>
+                            <option value="TRUST">TRUST</option>
+                            <option value="TRADEMARK">TRADEMARK</option>
+                            <option value="COIDA (Registrations & Letter of Good Standing)">COIDA (Registrations & Letter of Good Standing)</option>
+                            <option value="CIDB REGISTRATION">CIDB REGISTRATION</option>
+                            <option value="FREE CONSULTATIONS">FREE CONSULTATIONS</option>
+                            <option value="WEBSITE DEVELOPMENT">WEBSITE DEVELOPMENT</option>
+                        </select>
+                        <label for="Name">Description (Optional)</label>
                         <input type="text" id="message" rows="4" name="message" required>
                         <button type="submit" onclick="sendMail()">Send</button>
                     </form>
@@ -239,8 +259,11 @@
             let parms= {
                 name: document.getElementById("name").value,
                 email: document.getElementById("email").value,
+                contact: document.getElementById("contact").value,
+                CompanyRegistrationNumber: document.getElementById("CompanyRegistrationNumber").value,
                 subject: document.getElementById("subject").value,
                 message: document.getElementById("message").value,
+                
             };
 
             emailjs.send("service_9vckrbn","template_mb3tejl",parms)
@@ -251,4 +274,5 @@
                 });
         }
     </script>
+
 </html>
