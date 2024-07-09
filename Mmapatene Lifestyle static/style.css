@@ -27,6 +27,23 @@ header{
     
 }
 
+  
+  .banner {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .banner-overlay {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 40%); /* Adjust the opacity as needed */
+  }
+  
 .nav-background{
     background: brown;
     position:absolute;
@@ -170,6 +187,8 @@ header{
     padding: 25px;
     width: 100%;
     justify-content: space-around;
+    border: 10px black;
+    border-radius: 25px;
 }
 
 .section-booking-field{
@@ -205,7 +224,8 @@ header{
     display: none;
     margin-left: auto;
     margin-right: auto;
-    
+    border: 5px solid black;
+    border-radius: 25px;
 }
 
 
@@ -243,6 +263,9 @@ header{
     padding: 20px;
 }
 
+.hidden-about{
+    display: none;
+}
 .section-about{
     display: flex;
     margin-top: 132px;
@@ -316,7 +339,7 @@ header{
 .foreground--image{
     width: 33.333%;
     height: 100%;
-    background-image: url(pexels-cottonbro-studio-5379219.jpg);
+    background-image: url(Launch-images/Launch6.jpg);
     background-size: 100% auto;
     background-position: left;
     background-attachment: fixed;
@@ -338,7 +361,7 @@ header{
 .foreground--image2{
     width: 66.66%;
     height: 100%;
-    background-image: url(pexels-pixabay-260922.jpg);
+    background-image: url(Launch-images/Launch5.jpg);
     background-size: 100% auto;
     background-position: center;
     background-attachment: fixed;
@@ -360,7 +383,7 @@ header{
 .foreground--image3{
     width: 100%;
     height: 100%;
-    background-image: url(pexels-pixabay-261251.jpg);
+    background-image: url(Launch-images/278735649_140558328529538_6416886374017781868_n.jpg);
     background-size: 100% auto;
     background-position: right;
     background-attachment: fixed;
@@ -853,7 +876,15 @@ header{
 
 
 
-
+@media (max-width:950px) {
+    .section-booking {
+        
+        display: none;
+    }
+    .hidden-about{
+        display: block;
+    }
+}
 
 
 @media (max-width:750px) {
@@ -912,10 +943,7 @@ header{
 
     }
 
-    .section-booking {
-        
-        display: none;
-    }
+    
     
     .Right-Section {
         display: none;
@@ -952,9 +980,19 @@ header{
         display: flex;
         flex-direction: column;
         height: 200vh;
+        margin-top: 40px;
         
     }
 
+    .section-about-words {
+        text-align: center;
+    }
+
+    .section-about-words {
+        
+        text-align: center; 
+        width: 100%;
+   }
    
 
     .section1-img{
