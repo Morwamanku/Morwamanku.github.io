@@ -352,6 +352,7 @@ section{
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 120px;
+    background: black;
 }
 
 .heading{
@@ -361,13 +362,13 @@ section{
     flex-direction: column;
     justify-content: center;
     padding-top: 20px;
-    background: #fbfbfb;
+    background:black;
 }
 
 .heading h1{
-    color: #000;
+    padding-bottom: 25px;
     font-size:60px ;
-    margin-bottom: 25px;
+
     font-weight: 800;
     
 }
@@ -385,7 +386,7 @@ section{
     align-items: center;
     flex-wrap: nowrap;
     height: auto;
-    background: #fbfbfb;
+    background: black;
     flex-direction: row;
     padding-top: 40px;
     padding-bottom: 0px;
@@ -398,7 +399,7 @@ section{
     align-items: center;
     flex-wrap: wrap;
     height: auto;
-    background: #fbfbfb;
+    background: black;
 }
 
 .about-image{
@@ -516,7 +517,7 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(pexels-andrea-piacquadio-3771045.jpg);
+    background: url(contact\ Page\ \(1\).jpeg);
     background-size: cover;
 }
 
@@ -534,7 +535,7 @@ section{
 
 .contact .content p{
     font-size: 19px;
-    color: #747474;
+    
     margin-bottom: 35px;
     font-family: "Old Standard TT", Arial, sans-serif;
 }
@@ -591,6 +592,8 @@ section{
     width: 40%;
     padding: 40px;
     background: #fff;
+    border: 3px solid black;
+    border-radius: 25px;
 }
 
 .contactForm h2{
