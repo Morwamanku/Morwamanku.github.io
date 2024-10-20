@@ -1,0 +1,51 @@
+
+  .stats-section {
+    height: 100vh; /* Full viewport height */
+    background-image: url('pexels-christian-fohrer-1804061.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* This allows the stats to wrap on smaller screens */
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  .stat {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .stat h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+  
+  .stat p {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ccc;
+  }
+  

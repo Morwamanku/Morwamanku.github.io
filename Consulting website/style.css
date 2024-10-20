@@ -8,6 +8,19 @@
    
 }
 
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .barlow-thin {
+    font-family: "Barlow", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+
 .wrapper{
     position: fixed;
     width: 100%;
@@ -76,7 +89,9 @@ header{
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding: 20px;
+    width: 100%;
+    padding-top: 40px;
 }
 .active{
     color: red;
@@ -85,13 +100,15 @@ nav{
 .search{
     display: flex;
     gap: 10px;
-
+    position: absolute;
+    top: 0;
+    padding-top: 15px;
 }
 
 .left-nav{
-    font-size: 14px;
+    font-size: 18px;
     color: #fff;
-    font-weight: 600;
+    font-weight: 400;
     font-family: 'Fjalla One', sans-serif;
     cursor: pointer;
 }
@@ -107,7 +124,7 @@ nav{
 
 
 .logo{
-    width: 350px;
+    width: 369px;
     margin-top: 200px;
 
 }
@@ -136,15 +153,20 @@ nav{
 
 .logo h1{
     color: #fff;
-    font-weight: 600;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 20px;
+
+                    
+    text-align: center;
+    font-size: 60px;
 }
 
 .menu{
     width: 100px;
     display: flex;
     height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 15px;
 }
 
 .menu-btn{
@@ -154,7 +176,8 @@ nav{
     border-radius: 15px;
     text-decoration: none;
     height: 35px;
-
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .menu-grid{
@@ -165,7 +188,7 @@ nav{
     justify-content: flex-start;
     gap: 5px;
     cursor: pointer;
-    padding-top: 3px;
+    padding-top: 7px;
 }
 
 .menu-line{
@@ -361,12 +384,13 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 40px;
     background:black;
+    padding-bottom: 50px;
 }
 
 .heading h1{
-    padding-bottom: 25px;
+
     font-size:60px ;
 
     font-weight: 800;
@@ -377,7 +401,9 @@ section{
     font-size: 19px;
     color:#cbbfbf;
     margin-bottom: 35px;
-    font-family: "Old Standard TT", Arial, sans-serif;
+    font-family: "Barlow", sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
 .founder{
@@ -407,7 +433,7 @@ section{
     margin-right: 40px;
     overflow: hidden;
     height: 500px;
-    border-radius: 100px;
+   
 }
 
 .about-image img{
@@ -433,7 +459,7 @@ section{
 .about-content h2{
     font-size: 36px;
     margin-bottom: 15px;
-    color: #333;
+    color: #787474;;
     font-weight: 800;
     font-family: sans-serif;
 }
@@ -450,7 +476,7 @@ section{
 .about-content p{
     font-size: 17px;
     line-height: 1.5;
-    color: #666;
+    color: white;
     margin-top: 20px;
 }
 
@@ -492,7 +518,7 @@ section{
 
 .service h2{
     font-size: 19px;
-    color: #cbbfbf;
+    color: black;
     font-family: 'Fjalla One', sans-serif;
 }
 
@@ -658,7 +684,58 @@ section{
 }
 
 
-
+.stats-section {
+    height: 100vh; /* Full viewport height */
+    background-image: url('AdobeStock_828246941.jpeg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* This allows the stats to wrap on smaller screens */
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    color: wheat;
+  }
+  
+  .stat {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .stat h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+  
+  .stat p {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ccc;
+  }
+  
 
 
 @media screen and (max-width:768px){
@@ -718,7 +795,12 @@ section{
         padding: 20px;
         flex-direction: column;
     }
-   
+
+    .logo h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+    }
     
 
 
