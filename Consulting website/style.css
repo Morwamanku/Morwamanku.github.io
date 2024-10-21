@@ -550,7 +550,7 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(contact\ Page\ \(1\).jpeg);
+    background: url(pexels-korhan-erdol-1123380-2554128.jpg);
     background-size: cover;
 }
 
@@ -719,11 +719,12 @@ section{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap; /* This allows the stats to wrap on smaller screens */
+    flex-wrap: wrap;
     width: 100%;
     max-width: 1200px;
     text-align: center;
     color: wheat;
+    flex-direction: column;
   }
   
   .stat {
@@ -732,12 +733,12 @@ section{
   }
   
   .stat h1 {
-    font-size: 4rem;
+    font-size: 25px;
     margin-bottom: 10px;
   }
   
   .stat p {
-    font-size: 1.2rem;
+    font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #ccc;
