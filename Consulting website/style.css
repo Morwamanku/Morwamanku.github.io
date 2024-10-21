@@ -506,33 +506,40 @@ section{
 }
 
 .service{
-    background: #fff;
+    background: black;
     padding: 25px 10px;
     border-radius: 5px;
     font-size: 14px;
     cursor: pointer;
     text-align: center;
-    
+    color: white;
+}
+
+.service img{
+    width: 80px;
 }
 
 
 .service h2{
     font-size: 19px;
-    color: black;
+
     font-family: 'Fjalla One', sans-serif;
 }
 
 .service p{
     font-size: 17px;
-    color: #333; 
+ 
     font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 
 .service:hover{
     background:#fbfbfb ;
-    color: orange;
-    
+    color: black;
+
 }
+
+
 
 .contact{
     background:#fbfbfb ;
