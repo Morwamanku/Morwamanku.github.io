@@ -714,6 +714,11 @@ section{
     align-items: center;
     height: 100vh;
   }
+
+  .milestone-heading{
+    color: #fff;
+    font-size: 100px;
+}
   
   .stats {
     display: flex;
@@ -808,6 +813,21 @@ section{
     color: #fff;
     text-align: center;
     font-size: 60px;
+    }
+
+    .stat p {
+        font-size: 10px;
+        
+    }
+
+    .stat h1 {
+        font-size: 15px;
+   
+    }
+
+    .milestone-heading{
+        
+        font-size: 50px;
     }
     
 
