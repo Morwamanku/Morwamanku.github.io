@@ -123,8 +123,8 @@
     <section class="contact">
         
         <div class="content">
-            <h1 >Contact</h1>
-            <p >Ready to enhance your construction projects with our expertise? Reach out to us</p>
+            <h1 class="bebas-neue-regular" style="color: white;" >Contact</h1>
+            <p style="color: white;"  >Ready to enhance your construction projects with our expertise? Reach out to us</p>
         </div>
         <div class="contact-container">
             <div class="contactInfo">
@@ -134,7 +134,7 @@
                     </div>
                     <div class="text">
                         <h3>Address</h3>
-                        <p>2 Augrabies St<br>Mooikloof Ridge<br> Pretoria<br> 0081</p>
+                        <p>4 Valley Close<br>Boardwalk Meander<br> Pretoria East<br> 0081</p>
                         
                     </div>
                 </div>
@@ -144,7 +144,7 @@
                     </div>
                     <div class="text">
                         <h3>Email</h3>
-                        <p>info@mannyaconsultants.com</p>
+                        <p>info@mannya-consulting.com</p>
                     </div>
                 </div>
                 <div class="box2">
@@ -153,19 +153,19 @@
                     </div>
                     <div class="text">
                         <h3>Phone</h3>
-                        <p>0794903136</p>
+                        <p>079 490 3136</p>
                     </div>
                 </div>
             </div>
             <div class="contactForm">
-                <form>
+                <form onsubmit="sendEmail(); return false;">
                     <h2>Send Message</h2>
                     <div class="inputBox">
                         <input type="text" name="" required="required">
                         <span>Full Name</span>
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="" required="required">
+                        <input type="email" id="email" name="" required="required">
                         <span>Email</span>
                     </div>
                     <div class="inputBox">
@@ -173,7 +173,9 @@
                         <span>Type your Message</span>
                     </div>
                     <div class="inputBox">
-                        <input type="submit" name="" value="Send">
+                        
+                        <button style="width: 100px;
+                    height: 30px;" type="submit">Send</button>
 
                     </div>
                 </form>
