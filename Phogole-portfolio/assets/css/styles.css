@@ -264,12 +264,14 @@ img {
   display: grid;
   margin-block: 1.5rem;
   overflow: hidden;
+  position: relative;
 }
 
 .info__img{
-  width: 140px;
   justify-self: center;
-  align-self: flex-end;
+    align-self: center;
+    object-fit: cover;
+    position: absolute;
 }
 
 .info__description{
@@ -322,12 +324,16 @@ img {
   border-radius: 2rem;
   display: grid;
   overflow: hidden;
+  position: relative;
 }
 
 .about__img{
-  width: 250px;
-  justify-self: center;
-  transform: translate(-2.5rem);
+    /* width: 250px; */
+    justify-self: center;
+    /* transform: translate(-2.5rem); */
+    position: absolute;
+    object-fit: cover;
+    align-self: center;
 }
 
 .about__note{
@@ -824,9 +830,6 @@ button:hover{
     height: 210px;
   }
 
-  .about__img{
-    transform: translate(-1rem);
-  }
 
   .skills{
     grid-column: 1/2;
