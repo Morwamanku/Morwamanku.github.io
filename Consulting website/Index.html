@@ -26,6 +26,7 @@
     <div class="wrapper">
         <div class="loader"> </div>
     </div>
+    <div class="top-bar" style="width: 100%; height: 80px; background-color:black; position: fixed; top: 0; left: 0; z-index: 7;"></div>
     <header>
         <div class="slider">
             <img src="pexels-jim-1118786" id="slideImg" alt="">
@@ -38,7 +39,7 @@
                     <P style="color: #fff;" class="bebas-neue-regular">Innovative Civil Engineering & Architectural Solutions for a Sustainable Future</P>
                 </div>
 
-                <div style="text-align: center;"><a style="    background: #cbbfbf;
+                <div style="text-align: center;"><a style="    background: white;
                     border-radius: 5px;
                     font-weight: 400;
                     color: black;" class="read-more bebas-neue-regular" href="TailoredSolutions.html">EXPLORE MORE</a></div>
@@ -46,19 +47,41 @@
                 <p class="barlow-thin" style="color: white;">Scroll down</p>
                 <h1 style="font-weight: 100;">|</h1></div>
             </div>
-            <nav>
-                <div class="search">
-                    <span class="left-nav barlow-thin" >GET IN TOUCH  </span><i style="color: #fff;" class="fa fa-search" aria-hidden="true" ><a href="contact.html"></a></i>
-                </div>
+            <nav style="z-index: 8">
+
+                 <div class="search">
+                    <img style="width: 150px;" src="white Manya_Logo 4.png" alt="">
+                </div> 
+                <!--<div class="search">
+                    <span class="left-nav barlow-thin" >GET IN TOUCH  </span>
+                    <i><a href="contact.html"></a></i>
+                </div>-->
+
+                <ul class="nav-links">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="about.html">About Us</a></li>
+                    <li><a class="nav-link" href="service.html">Sectors</a></li>
+                    <li><a class="nav-link" href="projects.html">Projects</a></li>
+               
+                </ul>
                 
                 
                 <div class="menu">
-                    <a onclick="openMenu()" class="menu-btn barlow-thin" href="#">MENU</a>
-                    <div class="menu-grid">
-                        <div class="menu-line"></div>
-                        <div class="menu-line2"></div>
-                        <div class="menu-line3"></div>
+                    <div class="menu-nav">
+                        <div class="menu-flex">
+                            <a onclick="openMenu()" class="menu-btn barlow-thin" href="#">MENU</a>
+                            <div class="menu-grid">
+                                <div class="menu-line"></div>
+                                <div class="menu-line2"></div>
+                                <div class="menu-line3"></div>
+                            </div>
+                        </div>
+                        
                     </div>
+                    <div class="contact-nav">
+                        <span class="left-nav barlow-thin" >GET IN TOUCH </span>
+                    </div>
+                    
                 </div>
                 
                 
@@ -94,15 +117,16 @@
         </div>
     </header>
 
-    <div class="heading">
-        <p style="    margin-bottom: 0px;
-    font-size: 14px;">Lets talk about us</p>
-    <div><h1 style="color: white;" class="bebas-neue-regular">About</h1></div>
-        
-        <p class="barlow-thin" style="color: white;">Partner with us to elevate your construction endeavors with precision and expertise.</p>
+    <div class="heading" style="    display: flex;flex-direction: row;justify-content: space-around;">
+        <img style="width: 100px;" src="worker2.png" alt="">
+
+        <img style="width: 100px;" src="engineer2.png" alt="">
+
+        <img style="width: 100px;" src="feasibility2.png" alt="">
+    
     </div>
   
-    <section class="about">
+    <section class="about" style="padding-bottom: 0px;">
 
         <div class="about-image">
             <img   src="pexels-fauxels-3183148.jpg" alt="">
@@ -120,10 +144,10 @@
       
 
     </section>
-    <section class="about" style="padding-top: 100px;">
+    <section class="about" style="padding-bottom: 0px;">
 
         
-        <div class="about-content" style="padding-right: 20px;padding-bottom: 50px;">
+        <div class="about-content" style="padding-bottom: 50px;">
             <div style="text-align: center;"><h2>Blueprints for Progress</h2><span>Our Mission</span></div>
             
             <p class="barlow-thin" style="text-align: center;"> 
@@ -146,7 +170,7 @@
     <section class="about">
 
         <div class="about-image">
-            <video style="height: 400px;" autoplay loop muted width="100%">
+            <video  autoplay loop muted width="100%">
                 <source src="6283052-uhd_3840_2160_24fps.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
