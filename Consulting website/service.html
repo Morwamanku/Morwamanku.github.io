@@ -19,27 +19,46 @@
     <div class="wrapper">
         <div class="loader"></div>
     </div>
-    <header>
-        <div class="slider">
-            <img src="pexels-pixabay-416405.jpg" id="slideImg" alt="">
-        </div>
-        <div class="overlay">
-            <nav>
-                <div class="search">
-                    <span class="left-nav">GET IN TOUCH  </span><i style="color: #fff;" class="fa fa-search" aria-hidden="true"></i>
-                </div>
-                <div class="word-logo" >
-                    <h1>SERVICE</h1>
-                    
-                </div>
+     <div class="top-bar" style="width: 100%; height: 80px; background-color:black; position: fixed; top: 0; left: 0;"></div>
+    <header style="height: 80px;">
+        
+        <div >
+            
+            <nav style="z-index: 8">
+
+                 <div class="search">
+                    <img style="width: 150px;" src="white Manya_Logo 4.png" alt="">
+                </div> 
+                <!--<div class="search">
+                    <span class="left-nav barlow-thin" >GET IN TOUCH  </span>
+                    <i><a href="contact.html"></a></i>
+                </div>-->
+
+                <ul class="nav-links">
+                    <li><a class="nav-link" href="index.html">HOME</a></li>
+                    <li><a class="nav-link" href="about.html">ABOUT</a></li>
+                    <li><a class="nav-link" href="service.html">SECTORS</a></li>
+                    <li><a class="nav-link" href="projects.html">PROJECTS</a></li>
+               
+                </ul>
+                
                 
                 <div class="menu">
-                    <a onclick="openMenu()" class="menu-btn" href="#">MENU</a>
-                    <div class="menu-grid">
-                        <div class="menu-line"></div>
-                        <div class="menu-line2"></div>
-                        <div class="menu-line3"></div>
+                    <div class="menu-nav">
+                        <div class="menu-flex">
+                            <a onclick="openMenu()" class="menu-btn barlow-thin" href="#">MENU</a>
+                            <div class="menu-grid">
+                                <div class="menu-line"></div>
+                                <div class="menu-line2"></div>
+                                <div class="menu-line3"></div>
+                            </div>
+                        </div>
+                        
                     </div>
+                    <div class="contact-nav">
+                        <span style="padding-top: 3px;" class="left-nav barlow-thin" >CONTACT US </span>
+                    </div>
+                    
                 </div>
                 
                 
@@ -60,7 +79,7 @@
                     <ul>
                         <li><a href="Index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a class="active" href="#">Service</a></li>
+                        <li><a href="service.html">Service</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         
                     </ul>
