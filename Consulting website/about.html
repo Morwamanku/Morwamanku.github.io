@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,194 +13,206 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
 </head>
-<body onload="slider()" >
+
+<body onload="slider()">
     <!-- loader  -->
     <div class="wrapper">
         <div class="loader"> </div>
     </div>
-    <div class="top-bar" style="width: 100%; height: 80px; background-color:black; position: fixed; top: 0; left: 0;"></div>
-    <header style="height: 80px;">
-        
-        <div >
-            
-            <nav style="z-index: 8">
+    <div class="top-bar"
+        style="width: 100%; height: 80px; background-color:black; position: fixed; top: 0; left: 0; z-index: 7;">
+        <nav style="z-index: 8">
 
-                 <div class="search">
-                    <img style="width: 150px;" src="white Manya_Logo 4.png" alt="">
-                </div> 
-                <!--<div class="search">
-                    <span class="left-nav barlow-thin" >GET IN TOUCH  </span>
-                    <i><a href="contact.html"></a></i>
-                </div>-->
-
-                <ul class="nav-links">
-                    <li><a class="nav-link" href="index.html">HOME</a></li>
-                    <li><a class="nav-link" href="about.html">ABOUT</a></li>
-                    <li><a class="nav-link" href="service.html">SECTORS</a></li>
-                    <li><a class="nav-link" href="projects.html">PROJECTS</a></li>
-               
-                </ul>
-                
-                
-                <div class="menu">
-                    <div class="menu-nav">
-                        <div class="menu-flex">
-                            <a onclick="openMenu()" class="menu-btn barlow-thin" href="#">MENU</a>
-                            <div class="menu-grid">
-                                <div class="menu-line"></div>
-                                <div class="menu-line2"></div>
-                                <div class="menu-line3"></div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="contact-nav">
-                        <span style="padding-top: 3px;" class="left-nav barlow-thin" >CONTACT US </span>
-                    </div>
-                    
-                </div>
-                
-                
-            </nav>
-        </div>
-
-        <div class="menu-opacity">
-            <div class="exit-menu">
-                <a onclick="closeMenu()" class="menu-btn" href="#">EXIT</a>
-                <div class="menu-grid">
-                    <div style="background: #333;" class="menu-line"></div>
-                    <div style="background: #333;" class="menu-line2"></div>
-                    <div style="background: #333;" class="menu-line3"></div>
-                </div>
+            <div class="search">
+                <a href="Index.html">
+                    <img style="width: 150px;"  src="white Manya_Logo 4.png" alt="">
+                </a>
+             
             </div>
-            <div class="sub-menu-opacity">
-                <div class="menu-options">
-                    <ul>
-                        <li><a href="Index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="service.html">Service</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        
+
+            <div class="hamburger" onclick="toggleMenu()">
+                ☰
+            </div>
+
+            <ul class="nav-links" id="navMenu">
+                <li><a class="nav-link" href="index.html">HOME</a></li>
+                <li><a class="nav-link" href="about.html">ABOUT</a></li>
+                <li class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="javascript:void(0);">SERVICES ▾</a>
+                    <ul class="dropdown-content">
+                        <li><a href="Civil-Engineering.html">CIVIL ENGINEERING</a></li>
+                        <li><a href="Architectural-Design.html">ARCHITECTURAL DESIGN</a></li>
+                        <li><a href="Project-and-Construction-Management.html"> PROJECT AND CONSTRUCTION MANAGEMENT</a></li>
+                        <li><a href="Quantity-Surveying.html">QUANTITY SURVEYING</a></li>
+                        <li><a href="Urban-and-Regional-Planning.html">URBAN AND REGIONAL PLANNING</a></li>
                     </ul>
-                </div>
-                <div class="right-opacity">
-                    <div class="menu-image">
-                        <img src="Menu image.png" alt="">
-                    </div>
-                </div>
+                </li>
+                <li><a class="nav-link" href="projects.html">PROJECTS</a></li>
+                <li class="mobile-contact"><a class="nav-link" href="#contact">CONTACT US</a></li>
+            </ul>
+            <div class="contact-nav">
+                <a href="#contact" class=" barlow-thin">CONTACT US</a>
             </div>
-            
-        </div>
-    </header>
+
+        </nav>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const dropdownToggle = document.querySelector('.dropdown-toggle');
+            const dropdown = document.querySelector('.dropdown');
+
+            dropdownToggle.addEventListener('click', function (e) {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+            });
+
+            // Optional: Close dropdown if clicking outside
+            document.addEventListener('click', function (e) {
+                if (!dropdown.contains(e.target)) {
+                    dropdown.classList.remove('active');
+                }
+            });
+        });
+    </script>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("show");
+        }
+    </script>
 
 
-    
-  
-    <section class="about" style="padding-bottom: 0px;">
+
+
+
+    <section class="about" style="padding: 0%; padding-top: 0%;">
 
         <div class="about-image">
-            <img   src="pexels-fauxels-3183148.jpg" alt="">
+            <img src="Picture49.jpg" alt="">
         </div>
         <div class="about-content">
-            <div style="text-align: center;"><h2>Building Foundations</h2><span>Our Journey</span></div>
-            
-            <p style="text-align: center;" class="barlow-thin" >Founded in 2024 by Tshegofatso Mamotheti, Mannya Consulting 
-                was born from a passion for blending technical precision with creative design. As a multi-disciplinary firm, 
-                we offer both civil engineering and architectural consulting services, ensuring a holistic approach to each project.
-                 With a foundation built on integrity, innovation, and collaboration, Mannya Consulting aims to redefine the built environment
-                  and create lasting impact through sustainable and forward-thinking solutions.</p>
+            <div class="Cap-words" style="text-align: center;">
+                <h2> BUILDING FOUNDATIONS</h2><span>OUR JOURNEY</span>
+            </div>
+
+            <p style="text-align: center;" class="barlow-thin">
+                Mannya Consulting is a proudly South African, black-owned consulting firm specialising in civil
+                engineering, architectural design, project management, quantity surveying, and urban and regional
+                planning.
+                Founded by Tshegofatso Mamotheti, a qualified civil engineering professional with a passion for
+                infrastructure development and community upliftment, the firm was established to offer technically
+                sound, contextually relevant, and forward-thinking solutions within the built environment.
+            </p>
             <a class="read-more" href="TailoredSolutions.html">Read More</a>
         </div>
-      
+
 
     </section>
-    <section class="about" style="padding-bottom: 0px;">
+    <section class="about" style="padding: 0%; padding-top: 0%;">
 
-        
-        <div class="about-content" style="padding-bottom: 50px;">
-            <div style="text-align: center;"><h2>Blueprints for Progress</h2><span>Our Mission</span></div>
-            
-            <p class="barlow-thin" style="text-align: center;"> 
-                At Mannya Consulting, we are driven by a singular mission: to design and engineer environments that enhance the quality of life for individuals and communities.
-                 With a deep commitment to excellence, we provide reliable, innovative, and environmentally responsible solutions in both civil engineering and architecture. 
-                 Each project we undertake is a reflection of our dedication to improving the world we live in.
+
+        <div class="about-content" >
+            <div  style="text-align: center;">
+                <h2 class="Cap-words"> BLUEPRINTS FOR PROGRESS </h2><span>OUR MISSION</span>
+            </div>
+
+            <p class="barlow-thin" style="text-align: center;">
+                Our vision is to be a trusted partner in shaping sustainable, resilient, and inclusive infrastructure
+                across South Africa.
+                We achieve this by combining engineering precision with architectural innovation, sound project
+                governance, and a deep understanding of spatial planning principles. With a hands-on, client-focused
+                approach,
+                we ensure that every project reflects excellence in execution and long-term value for stakeholders.
+                At Mannya Consulting, we pride ourselves on professionalism, integrity, and innovation. Whether managing
+                large-scale public
+                infrastructure or bespoke private developments, we bring together the right expertise to deliver quality
+                outcomes—on time, within budget, and in line with regulatory frameworks.
+
             </p>
             <a class="read-more" href="#">Read More</a>
         </div>
 
-     
+
 
         <div class="about-image">
-            <img   src="AdobeStock_783718605.jpeg" alt="">
+            <img src="Picture117.jpg" alt="">
         </div>
-      
+
 
     </section>
 
-    <section class="about" style="padding-bottom: 0px;">
+    <section class="about" style="padding: 0%; padding-top: 0%;">
 
         <div class="about-image">
-            <video  autoplay loop muted width="100%">
+            <video autoplay loop muted width="100%">
                 <source src="6283052-uhd_3840_2160_24fps.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
         <div class="about-content">
-            <div style="text-align: center;"><h2>Engineering a Better Future </h2><span> Our Mission</span></div>
-            
-            <p style="text-align: center;" class="barlow-thin" >Founded in 2024 by Tshegofatso Mamotheti, Mannya Consulting 
-                was born from a passion for blending technical precision with creative design. As a multi-disciplinary firm, 
-                we offer both civil engineering and architectural consulting services, ensuring a holistic approach to each project.
-                 With a foundation built on integrity, innovation, and collaboration, Mannya Consulting aims to redefine the built environment
-                  and create lasting impact through sustainable and forward-thinking solutions.</p>
-                 
+            <div style="text-align: center;">
+                <h2>ENGINEERING A BETTER FUTURE</h2><span> OUR MISSION</span>
+            </div>
+
+            <p style="text-align: center;" class="barlow-thin">
+                • Excellence – We strive for the highest standards in technical delivery and client service.<br>
+                • Integrity – We conduct our business with transparency, honesty, and accountability.<br>
+                • Sustainability – We are committed to environmentally conscious and socially responsible solutions.<br>
+                • Innovation – We embrace new technologies and methodologies to stay ahead in a changing world.<br>
+                • Empowerment – We support transformation and skills development through inclusive practices.<br>
+
+            </p>
+
             <a class="read-more" href="TailoredSolutions.html">Read More</a>
         </div>
-      
+
 
     </section>
 
-   
-    
+
+
 </body>
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail(){
-            Email.send({
-            Host : "smtp.elasticemail.com",
-            Username : "morwamanku123@gmail.com",
-            Password : "E6D5DCA325C777932349AEFD6EA27ED1452F",
-            To : 'morwamanku123@gmail.com',
-            From : document.getElementById("email").value,
-            Subject : "New Contact Form Enquiry",
-            Body : "And this is the body"
-            }).then(
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail() {
+        Email.send({
+            Host: "smtp.elasticemail.com",
+            Username: "morwamanku123@gmail.com",
+            Password: "E6D5DCA325C777932349AEFD6EA27ED1452F",
+            To: 'morwamanku123@gmail.com',
+            From: document.getElementById("email").value,
+            Subject: "New Contact Form Enquiry",
+            Body: "And this is the body"
+        }).then(
             message => alert(message)
-            );
-        }
-    </script>
-    <script>
-    
+        );
+    }
+</script>
+<script>
+
     anime.timeline()
-    .add({
-        targets: '.left-nav',
-        translateY: [200,0],
-        translateZ: 0,
-        opacity: [0,1],
-        easing: "easeOutExpo",
-        duration: 3000,
-        delay: (el, i) => 4800 + 50 * i
-    });
+        .add({
+            targets: '.left-nav',
+            translateY: [200, 0],
+            translateZ: 0,
+            opacity: [0, 1],
+            easing: "easeOutExpo",
+            duration: 3000,
+            delay: (el, i) => 4800 + 50 * i
+        });
 
     TweenMax.to(".wrapper", 2, {
         top: "-120%",
@@ -214,62 +227,62 @@
         y: 80,
         ease: Expo.easeInOut,
         delay: 1,
-        transformOrigin:"50% 100%"
+        transformOrigin: "50% 100%"
     });
 
     tl.to(".loader", 1.6, {
         height: "20vh",
         scaleY: "0%",
         ease: Expo.easeInOut,
-        transformOrigin:"0% -100%"
+        transformOrigin: "0% -100%"
     });
 
     TweenMax.to(".box", 2.4, {
-    y: "-100%",
-    ease: Expo.easeInOut,
-    delay: 3.8,
+        y: "-100%",
+        ease: Expo.easeInOut,
+        delay: 3.8,
     });
 
-    
 
-    
-    </script>
+
+
+</script>
 
 <script>
     let menuopacity = document.querySelector(".menu-opacity");
-    
+
     function openMenu() {
         menuopacity.classList.add("open-menu");
-        
+
     }
-    
-  
+
+
     function closeMenu() {
         menuopacity.classList.remove("open-menu");
-        
+
     }
-  </script>
+</script>
 <script>
-    var slideImg=document.getElementById("slideImg");
+    var slideImg = document.getElementById("slideImg");
 
     var images = new Array(
         "pexels-jim-1118786.jpg",
         "pexels-lumn-612109.jpg",
         "pexels-pixabay-417273.jpg"
-        
-    
+
+
     );
 
-    var len =images.length;
-    var i =0;
+    var len = images.length;
+    var i = 0;
 
-    function slider(){
-        if(i >len-1){
-            i=0;
+    function slider() {
+        if (i > len - 1) {
+            i = 0;
         }
-        slideImg.src =slideImg.src=images[i];
+        slideImg.src = slideImg.src = images[i];
         i++;
-        setTimeout('slider()',3000);
+        setTimeout('slider()', 3000);
     }
 
 </script>
