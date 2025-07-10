@@ -1073,7 +1073,7 @@ section {
     }
 
     .logo {
-        width: 350px;
+        width: 280px;
         margin-top: 200px;
     }
 
@@ -1085,7 +1085,6 @@ section {
     .logo h1 {
         color: #fff;
         text-align: center;
-        font-size: 60px;
     }
 
     .stat p {
