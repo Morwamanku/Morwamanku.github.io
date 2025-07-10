@@ -979,6 +979,16 @@ section {
 }
 
 @media screen and (max-width:768px) {
+
+
+  .about-image {
+    order: -1; /* Move image to the top */
+  }
+
+  .about-content {
+    order: 0; /* Keep text below image */
+  }
+
     .hamburger {
         display: block;
     }
