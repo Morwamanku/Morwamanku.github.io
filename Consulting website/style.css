@@ -1075,6 +1075,7 @@ section {
     .logo {
         width: 280px;
         margin-top: 200px;
+        scale: 75%;
     }
 
     .founder {
