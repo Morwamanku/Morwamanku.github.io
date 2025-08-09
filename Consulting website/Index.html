@@ -2,333 +2,594 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mannya Consulting</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <title>UpConstruction Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: UpConstruction - v1.3.0
+  * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body onload="slider()">
-    <!-- loader  -->
-    <div class="wrapper">
-        <div class="loader"> </div>
-    </div>
-    <div class="top-bar"
-        style="width: 100%; height: 80px; background-color:black; position: fixed; top: 0; left: 0; z-index: 7;">
-        <nav style="z-index: 8">
+<body>
 
-            <div class="search">
-                <img style="width: 150px;" src="white Manya_Logo 4.png" alt="">
-            </div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-            <div class="hamburger" onclick="toggleMenu()">
-                ☰
-            </div>
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+         <img  src="image/white Manya_Logo.png" alt="">
+      </a>
 
-            <ul class="nav-links" id="navMenu">
-                <li><a class="nav-link" href="Index.html">HOME</a></li>
-                <li><a class="nav-link" href="about.html">ABOUT</a></li>
-                <li class="dropdown">
-                    <a class="nav-link dropdown-toggle" href="javascript:void(0);">SERVICES ▾</a>
-                    <ul class="dropdown-content">
-                        <li><a href="Civil-Engineering.html">CIVIL ENGINEERING</a></li>
-                        <li><a href="Architectural-Design.html">ARCHITECTURAL DESIGN</a></li>
-                        <li><a href="Project-and-Construction-Management.html"> PROJECT AND CONSTRUCTION MANAGEMENT</a></li>
-                        <li><a href="Quantity-Surveying.html">QUANTITY SURVEYING</a></li>
-                        <li><a href="Urban-and-Regional-Planning.html">URBAN AND REGIONAL PLANNING</a></li>
-                    </ul>
-                </li>
-                <li><a class="nav-link" href="projects.html">PROJECTS</a></li>
-                <li class="mobile-contact"><a class="nav-link" href="#contact">CONTACT US</a></li>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown"><a href="#"><span>Services<i
+                class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                    class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
             </ul>
-            <div class="contact-nav desktop-contact">
-                <a href="#contact" class="barlow-thin">CONTACT US</a>
-            </div>
+          </li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav><!-- .navbar -->
 
-        </nav>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const dropdownToggle = document.querySelector('.dropdown-toggle');
-            const dropdown = document.querySelector('.dropdown');
+  </header><!-- End Header -->
 
-            dropdownToggle.addEventListener('click', function (e) {
-                e.preventDefault();
-                dropdown.classList.toggle('active');
-            });
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero">
 
-            // Optional: Close dropdown if clicking outside
-            document.addEventListener('click', function (e) {
-                if (!dropdown.contains(e.target)) {
-                    dropdown.classList.remove('active');
-                }
-            });
-        });
-    </script>
-
-    <script>
-        function toggleMenu() {
-            document.getElementById("navMenu").classList.toggle("show");
-        }
-    </script>
-    <header>
-        <div class="slider">
-            <video autoplay loop muted playsinline id="slideVideo" style="width: 100%; height: 100vh; object-fit: cover;">
-                <source src="IMG_0783.mov" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            
+    <div class="info d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2 data-aos="fade-down">Welcome to <span>Mannya</span></h2>
+            <p data-aos="fade-up">From smart design to solid execution, we build with purpose. The difference is Mannya.</p>
+            <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">Get Started</a>
+          </div>
         </div>
-        <div class="overlay" style="height: 100vh;">
-            <div class="logo" style="position: absolute;">
-                <a href="Index.html">
-                    <img h src="white Manya_Logo 4.png" alt="">
-                </a>
-                
-                <div style="text-align: center;">
-                    <h1 class="barlow-thin">THE DIFFERNCE IS MANNYA</h1>
-                    <P style="color: #fff;" class="bebas-neue-regular"></P>
+      </div>
+    </div>
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+  
+      <!-- Image Slide -->
+      <div class="carousel-item active">
+        <div class="d-block w-100" style="background-image: url('assets/img/hero-carousel/hero-carousel-1.jpg'); height: 100vh; background-size: cover; background-position: center;"></div>
+      </div>
+
+      <!-- Video Slide -->
+      <div class="carousel-item">
+        <video class="d-block w-100" autoplay muted loop playsinline>
+          <source src="video/IMG_6835.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Image Slide -->
+      <div class="carousel-item">
+        <div class="d-block w-100" style="background-image: url('image/Picture112.jpg'); height: 100vh; background-size: cover; background-position: center;"></div>
+      </div>
+
+      <!-- Video Slide -->
+      <div class="carousel-item">
+        <video class="d-block w-100" autoplay muted loop playsinline>
+          <source src="video/d39e6848-bdfe-4ebe-8772-6d213ef12680.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Image Slide -->
+      <div class="carousel-item">
+        <div class="d-block w-100" style="background-image: url('image/Picture44.jpg'); height: 100vh; background-size: cover; background-position: center;"></div>
+      </div>
+
+      <!-- Controls -->
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+
+
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= Get Started Section ======= -->
+    <section id="get-started" class="get-started section-bg" style="background: black;">
+      <div class="container">
+
+        <div class="row justify-content-between gy-4">
+
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+            <div class="content">
+              <h3 style="color: white;">What is Mannya consulting</h3>
+              <p style="color: white;">Mannya Consulting is a dynamic multi-disciplinary infrastructure consulting firm serving both private and public sector clients.
+              <p style="color: white;">We provide integrated, end-to-end solutions to meet diverse infrastructure requirements. Our expert team brings together specialists from across the built environment, including architects, environmental consultants, town planners, project managers, quantity surveyors, and electrical, industrial, mechanical, civil, municipal, and structural engineers. This collective expertise enables us to deliver innovative, efficient, and sustainable outcomes for every project.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-5" data-aos="fade">
+            <form action="forms/quote.php" method="post" class="php-email-form">
+              <h3 style="color: white;">Contact Us</h3>
+              <p style="color: white;">Trust Mannya Consulting to bring expertise, innovation, and precision to all your built environment needs.</p>
+              <div class="row gy-3">
+
+                <div class="col-md-12">
+                  <input type="text" name="name" class="form-control" placeholder="Name" required>
                 </div>
 
-                <div style="text-align: center;margin-top: 10px;    font-size: larger;">
-                    <a class="read-more-button bebas-neue-regular" href="about.html">EXPLORE MORE</a>
+                <div class="col-md-12 ">
+                  <input type="email" class="form-control" name="email" placeholder="Email" required>
                 </div>
-                <div style="display: flex;flex-direction: column;text-align: center; margin-top:57%;">
-                    <p class="barlow-thin" style="color: white;">Scroll down</p>
-                    <h1 style="font-weight: 100;">|</h1>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="phone" placeholder="Phone" required>
                 </div>
-            </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your quote request has been sent successfully. Thank you!</div>
+
+                  <button type="submit" style="background-color: black;">Get a quote</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Quote Form -->
 
         </div>
 
-        <div class="menu-opacity">
-            <div class="exit-menu">
-                <a onclick="closeMenu()" class="menu-btn" href="#">EXIT</a>
-                <div class="menu-grid">
-                    <div style="background: #333;" class="menu-line"></div>
-                    <div style="background: #333;" class="menu-line2"></div>
-                    <div style="background: #333;" class="menu-line3"></div>
-                </div>
-            </div>
-            <div class="sub-menu-opacity">
-                <div class="menu-options">
-                    <ul>
-                        <li><a href="Index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="service.html">Service</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+      </div>
+    </section><!-- End Get Started Section -->
 
-                    </ul>
-                </div>
-                <div class="right-opacity">
-                    <div class="menu-image">
-                        <img src="Menu image.png" alt="">
-                    </div>
-                </div>
-            </div>
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
 
-        </div>
-    </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <section class="contact" id="contact">
-        <div class="content">
-            <h1 class="bebas-neue-regular" style="color: white;">Contact</h1>
-            <p style="color: white;">Ready to enhance your construction projects with our expertise? Reach out to us.
-            </p>
+        <div class="section-header">
+          <h2>Services</h2>
+          <p>Voluptatem quibusdam ut ullam perferendis repellat non ut consequuntur est eveniet deleniti fignissimos eos
+            quam</p>
         </div>
 
-        <div class="contact-container">
-            <!-- Contact Info -->
-            <div class="contactInfo">
-                <div class="box2">
-                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                    <div class="text">
-                        <h3>Address</h3>
-                        <p>4 Valley Close<br>Boardwalk Meander<br>Pretoria East<br>0081</p>
-                    </div>
-                </div>
-                <div class="box2">
-                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-                    <div class="text">
-                        <h3>Email</h3>
-                        <p><a href="mailto:info@mannyaconsulting.com">info@mannya-consulting.com</a></p>
-                    </div>
-                </div>
-                <div class="box2">
-                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
-                    <div class="text">
-                        <h3>Phone</h3>
-                        <p><a href="tel:+27794903136">079 490 3136</a></p>
-                    </div>
-                </div>
-            </div>
+        <div class="row gy-4">
 
-            <!-- Contact Form -->
-            <div class="contactForm">
-                <form onsubmit="sendEmail(); return false;">
-                    <h2>Send a Message</h2>
-                    <div class="inputBox">
-                        <input type="text" name="name" required>
-                        <span>Full Name</span>
-                    </div>
-                    <div class="inputBox">
-                        <input type="email" id="email" name="email" required>
-                        <span>Email</span>
-                    </div>
-                    <div class="inputBox">
-                        <textarea name="message" required></textarea>
-                        <span>Type your Message</span>
-                    </div>
-                    <div class="inputBox">
-                        <button type="submit">Send</button>
-                    </div>
-                </form>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-mountain-city"></i>
+              </div>
+              <h3>Asset Management Systems</h3>
+              <p>Planning and managing infrastructure assets for optimal performance and lifecycle value.</p>
+              <a href="service-details.html" class="readmore stretched-link">Learn more <i
+                  class="bi bi-arrow-right"></i></a>
             </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+              </div>
+              <h3>architecture</h3>
+              <p>Designing functional, aesthetically pleasing, and sustainable spaces.</p>
+              <a href="service-details.html" class="readmore stretched-link">Learn more <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-compass-drafting"></i>
+              </div>
+              <h3>Construction Supervision</h3>
+              <p>Designing and managing plumbing, drainage, and water supply systems in buildings..</p>
+              <a href="service-details.html" class="readmore stretched-link">Learn more <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-trowel-bricks"></i>
+              </div>
+              <h3>Mechanical Engineering</h3>
+              <p>Delivering innovative solutions for HVAC, machinery, and mechanical systems.</p>
+              <a href="service-details.html" class="readmore stretched-link">Learn more <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-helmet-safety"></i>
+              </div>
+              <h3>Civil & Municipal Engineering</h3>
+              <p>Planning and developing public infrastructure, roads, and municipal services.</p>
+              <a href="service-details.html" class="readmore stretched-link">Learn more <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+              </div>
+              <h3>Quantity Surveying</h3>
+              <p>Managing project costs, budgets, and financial planning for construction projects</p>
+              <a href="service-details.html" class="readmore stretched-link">Learn more <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
         </div>
-    </section>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Alt Services Section ======= -->
+    <section id="alt-services" class="alt-services" style="background: black;">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-around gy-4">
+          <div class="col-lg-6 img-bg" style="background-image: url(image/contact\ Page\ \(2\).jpeg);" data-aos="zoom-in"
+            data-aos-delay="100"></div>
+
+          <div class="col-lg-5 d-flex flex-column justify-content-center">
+            <h3 style="color: white;">Our values</h3>
+            <p style="color: white;">We uphold integrity, deliver excellence, and embrace innovation. Through collaboration, sustainability, and a client-focused approach, we create solutions that stand the test of time.</p>
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
+              <i class="bi bi-easel flex-shrink-0"></i>
+              <div>
+                <h4 style="color: white;"><a href="" class="stretched-link">Integrity</a></h4>
+                <p style="color: white;">We act with honesty, transparency, and accountability in all our work.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-patch-check flex-shrink-0"></i>
+              <div>
+                <h4 style="color: white;"><a href="" class="stretched-link">Excellence</a></h4>
+                <p style="color: white;"> We strive for the highest standards in every project we undertake.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-brightness-high flex-shrink-0"></i>
+              <div>
+                <h4 style="color: white;"><a href="" class="stretched-link">Innovation</a></h4>
+                <p style="color: white;">We embrace creative, forward-thinking solutions to meet evolving client needs.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-brightness-high flex-shrink-0"></i>
+              <div>
+                <h4 style="color: white;"><a href="" class="stretched-link">Client Focus</a></h4>
+                <p style="color: white;">We put our clients at the centre of everything we do, ensuring their vision becomes reality.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Alt Services Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <ul class="nav nav-tabs row  g-2 d-flex">
+
+          <li class="nav-item col-3">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+              <h4>Modisit</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+              <h4>Praesenti</h4>
+            </a><!-- End tab nav item -->
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+              <h4>Explica</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+              <h4>Nostrum</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+        </ul>
+
+        <div class="tab-content">
+
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+                data-aos="fade-up" data-aos-delay="100">
+                <h3>Voluptatem dignissimos provident</h3>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore
+                  magna aliqua.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                  <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
+                    pariatur.</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/img/features-1.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Neque exercitationem debitis</h3>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore
+                  magna aliqua.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                  <li><i class="bi bi-check2-all"></i> Provident mollitia neque rerum asperiores dolores quos qui a.
+                    Ipsum neque dolor voluptate nisi sed.</li>
+                  <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
+                    pariatur.</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-2.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Voluptatibus commodi accusamu</h3>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                  <li><i class="bi bi-check2-all"></i> Provident mollitia neque rerum asperiores dolores quos qui a.
+                    Ipsum neque dolor voluptate nisi sed.</li>
+                </ul>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore
+                  magna aliqua.
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-3.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane" id="tab-4">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Omnis fugiat ea explicabo sunt</h3>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore
+                  magna aliqua.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                  <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
+                    pariatur.</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-4.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    
+
+        
 
 
+
+    
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content position-relative">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>UpConstruction</h3>
+              <p>
+                A108 Adam Street <br>
+                NY 535022, USA<br><br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+              <div class="social-links d-flex mt-3">
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End footer info column-->
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div><!-- End footer links column-->
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Product Management</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Graphic Design</a></li>
+            </ul>
+          </div><!-- End footer links column-->
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Hic solutasetp</h4>
+            <ul>
+              <li><a href="#">Molestiae accusamus iure</a></li>
+              <li><a href="#">Excepturi dignissimos</a></li>
+              <li><a href="#">Suscipit distinctio</a></li>
+              <li><a href="#">Dilecta</a></li>
+              <li><a href="#">Sit quas consectetur</a></li>
+            </ul>
+          </div><!-- End footer links column-->
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Nobis illum</h4>
+            <ul>
+              <li><a href="#">Ipsam</a></li>
+              <li><a href="#">Laudantium dolorum</a></li>
+              <li><a href="#">Dinera</a></li>
+              <li><a href="#">Trodelas</a></li>
+              <li><a href="#">Flexo</a></li>
+            </ul>
+          </div><!-- End footer links column-->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal text-center position-relative">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>UpConstruction</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a
+            href="https://themewagon.com">ThemeWagon</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
-
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-    function sendEmail() {
-        Email.send({
-            Host: "smtp.elasticemail.com",
-            Username: "morwamanku123@gmail.com",
-            Password: "E6D5DCA325C777932349AEFD6EA27ED1452F",
-            To: 'morwamanku123@gmail.com',
-            From: document.getElementById("email").value,
-            Subject: "New Contact Form Enquiry",
-            Body: "And this is the body"
-        }).then(
-            message => alert(message)
-        );
-    }
-</script>
-<script>
-
-    anime.timeline()
-        .add({
-            targets: '.left-nav',
-            translateY: [200, 0],
-            translateZ: 0,
-            opacity: [0, 1],
-            easing: "easeOutExpo",
-            duration: 3000,
-            delay: (el, i) => 4800 + 50 * i
-        });
-
-    TweenMax.to(".wrapper", 2, {
-        top: "-120%",
-        ease: Expo.easeInOut,
-        delay: 3.6
-    });
-
-    var tl = new TimelineMax();
-
-    tl.from(".loader", 1.6, {
-        scaleY: "0%",
-        y: 80,
-        ease: Expo.easeInOut,
-        delay: 1,
-        transformOrigin: "50% 100%"
-    });
-
-    tl.to(".loader", 1.6, {
-        height: "20vh",
-        scaleY: "0%",
-        ease: Expo.easeInOut,
-        transformOrigin: "0% -100%"
-    });
-
-    TweenMax.to(".box", 2.4, {
-        y: "-100%",
-        ease: Expo.easeInOut,
-        delay: 3.8,
-    });
-
-
-
-
-</script>
-
-<script>
-    let menuopacity = document.querySelector(".menu-opacity");
-
-    function openMenu() {
-        menuopacity.classList.add("open-menu");
-
-    }
-
-
-    function closeMenu() {
-        menuopacity.classList.remove("open-menu");
-
-    }
-</script>
-<script>
-    var slideVideo = document.getElementById("slideVideo");
-
-    var videos = [
-        "IMG_6835.mov",
-        "d39e6848-bdfe-4ebe-8772-6d213ef12680.mov",
-        "6283052-uhd_3840_2160_24fps.mp4"
-    ];
-
-    var len = videos.length;
-    var i = 0;
-
-    function slider() {
-        if (i >= len) {
-            i = 0;
-        }
-
-        slideVideo.src = videos[i];
-        slideVideo.load();       // Ensures new video is loaded
-        slideVideo.play();       // Starts playback
-        i++;
-
-        setTimeout(slider, 10000); // Change every 10 seconds (adjust as needed)
-    }
-
-    // Start slider on page load
-    window.onload = slider;
-</script>
-
-
-
-
 
 </html>
