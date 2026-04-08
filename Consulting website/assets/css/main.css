@@ -2661,8 +2661,8 @@ section {
 
 .hero .carousel {
   width: 100%;
-  height: 65vh;
-  min-height: 450px;
+  height: 80vh;
+  min-height: 500px;
   padding: 0;
   margin: 0;
   position: relative;
@@ -2687,56 +2687,81 @@ section {
 }
 
 .hero-banner-image {
-  height: 65vh;
+  height: 80vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 450px;
+  min-height: 500px;
 }
 
 .hero-banner-video {
-  height: 65vh;
+  height: 80vh;
   object-fit: cover;
-  min-height: 450px;
+  min-height: 500px;
 }
 
 /* Mobile responsive banner adjustments */
 @media (max-width: 768px) {
   .hero .carousel {
-    height: 50vh;
-    min-height: 350px;
+    height: 70vh;
+    min-height: 450px;
   }
 
   .hero-banner-image,
   .hero-banner-video {
-    height: 50vh;
-    min-height: 350px;
+    height: 70vh;
+    min-height: 450px;
   }
 }
 
 @media (max-width: 480px) {
   .hero .carousel {
-    height: 40vh;
-    min-height: 280px;
+    height: 50vh;
+    min-height: 300px;
   }
 
   .hero-banner-image,
   .hero-banner-video {
-    height: 40vh;
-    min-height: 280px;
+    height: 50vh;
+    min-height: 300px;
   }
+
+  .hero .info {
+    padding: 80px 20px 0 20px;
+  }
+
+  .hero .info h2 {
+    font-size: 1.75rem;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+  }
+
+  .hero .info h2:after {
+    width: 60px;
+    height: 3px;
+  }
+
+  .hero .info p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+
+  .hero .info .btn-get-started {
+    font-size: 14px;
+    padding: 12px 32px;
+    margin: 5px;
+  }
+}
+
+.hero .row {
+  padding-top: 100px;
 }
 
 .hero .info {
   position: absolute;
   inset: 0;
   z-index: 2;
-}
-
-@media (max-width: 768px) {
-  .hero .info {
-    padding: 0 50px;
-  }
 }
 
 .hero .info h2 {
@@ -2772,8 +2797,23 @@ section {
 }
 
 @media (max-width: 768px) {
+  .hero .info {
+    padding: 0 30px;
+  }
+
   .hero .info h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+  }
+
+  .hero .info p {
+    font-size: 16px;
+  }
+
+  .hero .info .btn-get-started {
+    font-size: 15px;
+    padding: 14px 40px;
   }
 }
 
